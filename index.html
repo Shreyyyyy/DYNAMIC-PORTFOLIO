@@ -349,266 +349,345 @@
 
           <!-- System 1: Flipkart Talk2Data -->
           <div class="system-card magnetic-hover" data-hud-override="FLIPKART TALK2DATA: MULTI-AGENT SQL & ANALYTICS">
-            <div class="sys-badge cyan">ENTERPRISE ANALYTICS &middot; E-COMMERCE</div>
+            <div class="sys-card-top">
+              <div class="sys-badge cyan">ENTERPRISE ANALYTICS &middot; FLIPKART</div>
+              <span class="sys-impact-tag text-cyan">⚡ &lt;2% Error Loop</span>
+            </div>
+
             <h3 class="sys-title">Flipkart Talk2Data</h3>
             
-            <div class="sys-block-group">
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-problem">
-                  <span class="block-icon">🎯</span> Business Problem
-                </span>
-                <p class="sys-block-text">
-                  E-commerce category managers and non-technical business teams faced hours of manual SQL drafting and BI bottlenecks to extract sales metrics, cohort insights, and inventory trends across massive data warehouses.
-                </p>
-              </div>
+            <p class="sys-punchline">
+              Autonomous multi-agent system transforming natural language into executable, self-healing SQL queries for category managers.
+            </p>
 
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-solution">
-                  <span class="block-icon">⚙️</span> Architecture &amp; Solution
-                </span>
-                <p class="sys-block-text">
-                  Architected an autonomous multi-agent analytics pipeline using <strong>LangGraph, Google ADK, and Gemini 1.5 Pro</strong>. Features intelligent schema understanding, dynamic SQL generation, automated self-correction of invalid queries, and conversational RAG for contextual synthesis.
-                </p>
+            <!-- Quick Punch Metrics Bar -->
+            <div class="sys-stat-row">
+              <div class="sys-stat-chip">
+                <span class="stat-num text-cyan">Zero-Shot</span>
+                <span class="stat-lbl">SQL Accuracy</span>
               </div>
-
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-impact">
-                  <span class="block-icon">📈</span> Measurable Business Impact
-                </span>
-                <ul class="sys-impact-list">
-                  <li><strong>Instant Data Democratization:</strong> Eliminated BI query backlogs, enabling non-technical stakeholders to get validated analytics in seconds.</li>
-                  <li><strong>Zero-Shot SQL Accuracy:</strong> Autonomous error-reflection loop reduced query failure rates to under 2%.</li>
-                </ul>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-gold">Instant</span>
+                <span class="stat-lbl">BI Insights</span>
+              </div>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-emerald">LangGraph</span>
+                <span class="stat-lbl">Multi-Agent</span>
               </div>
             </div>
+
+            <!-- Interactive Deep Dive Toggle -->
+            <details class="sys-details-drawer">
+              <summary class="drawer-trigger">
+                <span>View Architecture &amp; Business Impact</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-content">
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-prob">Problem</span>
+                  <p>Non-technical teams faced multi-hour BI backlogs to query massive e-commerce warehouses.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-sol">Solution</span>
+                  <p>Orchestrated LangGraph + Gemini 1.5 Pro agents with automated schema reflection and query validation.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-imp">Impact</span>
+                  <p>Eliminated manual SQL bottlenecks; reduced execution errors to &lt;2% via autonomous reflection.</p>
+                </div>
+              </div>
+            </details>
 
             <div class="sys-tech-row">
               <span>LangGraph</span>
               <span>Google ADK</span>
               <span>Gemini 1.5 Pro</span>
-              <span>Autonomous SQL</span>
-              <span>Self-Correction</span>
-              <span>Hybrid RAG</span>
+              <span>SQL Tool Calling</span>
             </div>
           </div>
 
           <!-- System 2: Enterprise RAG Platform -->
           <div class="system-card magnetic-hover" data-hud-override="ENTERPRISE RAG: 60+ MINS DOWN TO UNDER 1 MIN">
-            <div class="sys-badge emerald">KNOWLEDGE RETRIEVAL &middot; ENTERPRISE SEARCH</div>
-            <h3 class="sys-title">Enterprise RAG &amp; Knowledge Engine</h3>
+            <div class="sys-card-top">
+              <div class="sys-badge emerald">KNOWLEDGE RETRIEVAL &middot; PRODUCTION RAG</div>
+              <span class="sys-impact-tag text-emerald">⚡ 98.3% Faster</span>
+            </div>
+
+            <h3 class="sys-title">Enterprise RAG Engine</h3>
             
-            <div class="sys-block-group">
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-problem">
-                  <span class="block-icon">🎯</span> Business Problem
-                </span>
-                <p class="sys-block-text">
-                  Enterprise operations and domain specialists spent <strong>60+ minutes per inquiry</strong> manually parsing multi-hundred-page technical manuals, policy PDFs, and scattered internal documentation with high risk of human oversight.
-                </p>
-              </div>
+            <p class="sys-punchline">
+              Sub-minute multimodal document search engine orchestrating hybrid retrieval across complex 100+ page technical manuals.
+            </p>
 
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-solution">
-                  <span class="block-icon">⚙️</span> Architecture &amp; Solution
-                </span>
-                <p class="sys-block-text">
-                  Engineered an end-to-end production RAG platform with multimodal embeddings, hybrid vector search (dense + sparse BM25), semantic re-ranking, and dynamic context orchestration with strict attribution citations.
-                </p>
+            <div class="sys-stat-row">
+              <div class="sys-stat-chip">
+                <span class="stat-num text-emerald">&lt;60s</span>
+                <span class="stat-lbl">Retrieval Time</span>
               </div>
-
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-impact">
-                  <span class="block-icon">📈</span> Measurable Business Impact
-                </span>
-                <ul class="sys-impact-list">
-                  <li><strong>98.3% Lookup Time Reduction:</strong> Slashed document retrieval time from <strong>60+ minutes to under 60 seconds</strong>.</li>
-                  <li><strong>98.4% Groundedness:</strong> Benchmark-verified citations guaranteed audit-proof, hallucination-free answers.</li>
-                </ul>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-cyan">98.4%</span>
+                <span class="stat-lbl">Faithfulness</span>
+              </div>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-gold">Hybrid</span>
+                <span class="stat-lbl">Dense + BM25</span>
               </div>
             </div>
 
+            <details class="sys-details-drawer">
+              <summary class="drawer-trigger">
+                <span>View Architecture &amp; Business Impact</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-content">
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-prob">Problem</span>
+                  <p>Domain experts wasted 60+ minutes per inquiry manually parsing dense manuals and policy PDFs.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-sol">Solution</span>
+                  <p>Hybrid vector search (Dense + BM25), semantic re-ranking, and dynamic citation orchestration.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-imp">Impact</span>
+                  <p>Lookup time slashed from 60+ minutes to &lt;1 minute; 98.4% groundedness verified by DeepEval.</p>
+                </div>
+              </div>
+            </details>
+
             <div class="sys-tech-row">
-              <span>Hybrid Vector Search</span>
+              <span>Hybrid Search</span>
               <span>Vector DB</span>
-              <span>Context Routing</span>
-              <span>Semantic Re-ranking</span>
-              <span>DeepEval Faithfulness</span>
+              <span>Re-ranking</span>
+              <span>DeepEval</span>
             </div>
           </div>
 
           <!-- System 3: Multilingual Voice AI Bot -->
           <div class="system-card magnetic-hover" data-hud-override="VOICE AI: 5 CONCURRENT CHANNELS & VAD">
-            <div class="sys-badge purple">CONVERSATIONAL AI &middot; REAL-TIME AUDIO</div>
-            <h3 class="sys-title">Multilingual Voice AI Autonomous Agent</h3>
+            <div class="sys-card-top">
+              <div class="sys-badge purple">CONVERSATIONAL AI &middot; VOICE STREAMING</div>
+              <span class="sys-impact-tag text-purple">⚡ 0 Human Handoff</span>
+            </div>
+
+            <h3 class="sys-title">Multilingual Voice AI Agent</h3>
             
-            <div class="sys-block-group">
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-problem">
-                  <span class="block-icon">🎯</span> Business Problem
-                </span>
-                <p class="sys-block-text">
-                  Inbound customer support and automotive test-drive booking suffered from high call abandonment rates, long wait queues, and expensive per-seat 24/7 staffing costs for multi-dialect callers.
-                </p>
-              </div>
+            <p class="sys-punchline">
+              Real-time conversational Voice AI bot executing end-to-end customer support &amp; test-drive bookings with sub-second latency.
+            </p>
 
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-solution">
-                  <span class="block-icon">⚙️</span> Architecture &amp; Solution
-                </span>
-                <p class="sys-block-text">
-                  Built a real-time full-duplex Voice AI agent using <strong>Whisper STT, FastAPI WebSockets, streaming LLMs, Neural TTS, and Voice Activity Detection (VAD)</strong> with real-time intent extraction and calendar booking tool integrations.
-                </p>
+            <div class="sys-stat-row">
+              <div class="sys-stat-chip">
+                <span class="stat-num text-purple">5 Streams</span>
+                <span class="stat-lbl">Concurrent / Node</span>
               </div>
-
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-impact">
-                  <span class="block-icon">📈</span> Measurable Business Impact
-                </span>
-                <ul class="sys-impact-list">
-                  <li><strong>100% Zero-Human Hand-off:</strong> Handled end-to-end inquiries and scheduled test-drives completely autonomously.</li>
-                  <li><strong>High-Concurrency Throughput:</strong> Maintained sub-second conversational latency across <strong>5 simultaneous channels</strong> per node.</li>
-                </ul>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-emerald">&lt;400ms</span>
+                <span class="stat-lbl">Voice Latency</span>
+              </div>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-gold">100%</span>
+                <span class="stat-lbl">Auto Scheduled</span>
               </div>
             </div>
 
+            <details class="sys-details-drawer">
+              <summary class="drawer-trigger">
+                <span>View Architecture &amp; Business Impact</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-content">
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-prob">Problem</span>
+                  <p>Inbound customer desks suffered high abandonment rates and costly 24/7 staffing overhead.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-sol">Solution</span>
+                  <p>Full-duplex WebSocket pipeline with Whisper STT, streaming LLMs, Neural TTS, and VAD audio chunking.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-imp">Impact</span>
+                  <p>Automated 100% of test-drive bookings autonomously with sub-second turnaround on 5 channels.</p>
+                </div>
+              </div>
+            </details>
+
             <div class="sys-tech-row">
-              <span>Whisper STT (Real-Time)</span>
+              <span>Whisper STT</span>
               <span>FastAPI WebSockets</span>
               <span>Neural TTS</span>
               <span>VAD Streaming</span>
-              <span>Tool-Calling Agents</span>
             </div>
           </div>
 
           <!-- System 4: Agentic Video & Film Studio -->
           <div class="system-card magnetic-hover" data-hud-override="AI FILM STUDIO: DIRECTOR, STORYBOARD, VEO & QA AGENTS">
-            <div class="sys-badge blue">MULTIMODAL GENAI &middot; CREATIVE WORKFLOWS</div>
-            <h3 class="sys-title">Agentic Video &amp; Film Studio Pipeline</h3>
+            <div class="sys-card-top">
+              <div class="sys-badge blue">MULTIMODAL GENAI &middot; GOOGLE VEO</div>
+              <span class="sys-impact-tag text-blue">⚡ 80% Cycle Cut</span>
+            </div>
+
+            <h3 class="sys-title">Agentic Video Pipeline</h3>
             
-            <div class="sys-block-group">
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-problem">
-                  <span class="block-icon">🎯</span> Business Problem
-                </span>
-                <p class="sys-block-text">
-                  Commercial marketing video production is capital and time-intensive &mdash; requiring weeks of back-and-forth between scriptwriters, storyboard artists, and renderers, often with glaring character inconsistency across generative frames.
-                </p>
-              </div>
+            <p class="sys-punchline">
+              Autonomous 4-agent LangGraph workflow orchestrating script-to-screen video synthesis with strict character &amp; scene continuity.
+            </p>
 
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-solution">
-                  <span class="block-icon">⚙️</span> Architecture &amp; Solution
-                </span>
-                <p class="sys-block-text">
-                  Orchestrated a 4-agent LangGraph workflow comprising <strong>Director Agent, Storyboard Agent, Veo Video Generator, and Multimodal QA Agent</strong> with visual memory conditioning to preserve character, lighting, and wardrobe continuity across scenes.
-                </p>
+            <div class="sys-stat-row">
+              <div class="sys-stat-chip">
+                <span class="stat-num text-blue">4 Agents</span>
+                <span class="stat-lbl">LangGraph Swarm</span>
               </div>
-
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-impact">
-                  <span class="block-icon">📈</span> Measurable Business Impact
-                </span>
-                <ul class="sys-impact-list">
-                  <li><strong>80% Shorter Production Cycles:</strong> Compressed multi-week storyboard-to-render timelines down to automated execution in hours.</li>
-                  <li><strong>Deterministic Character Fidelity:</strong> Automated QA agent discarded out-of-character frames before final video assembly.</li>
-                </ul>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-gold">Google Veo</span>
+                <span class="stat-lbl">Motion Synthesis</span>
+              </div>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-emerald">100%</span>
+                <span class="stat-lbl">Style Locked</span>
               </div>
             </div>
+
+            <details class="sys-details-drawer">
+              <summary class="drawer-trigger">
+                <span>View Architecture &amp; Business Impact</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-content">
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-prob">Problem</span>
+                  <p>Commercial marketing video creation took weeks with persistent character drift across AI frames.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-sol">Solution</span>
+                  <p>Director, Storyboard, Veo, and QA Agents linked in a DAG with visual memory conditioning.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-imp">Impact</span>
+                  <p>Compressed production timelines by 80%; QA agent automatically pruned inconsistent keyframes.</p>
+                </div>
+              </div>
+            </details>
 
             <div class="sys-tech-row">
               <span>Google Veo</span>
               <span>LangGraph DAG</span>
-              <span>Multi-Agent Swarm</span>
-              <span>Visual Continuity</span>
-              <span>Automated QA Agent</span>
+              <span>Storyboard Agent</span>
+              <span>Auto QA</span>
             </div>
           </div>
 
           <!-- System 5: Creativium Creative Banner Generator -->
           <div class="system-card magnetic-hover" data-hud-override="CREATIVIUM: CAMPAIGN-READY BANNER AUTOMATION">
-            <div class="sys-badge amber">CREATIVE AUTOMATION &middot; AD-TECH</div>
-            <h3 class="sys-title">Creativium: AI Banner &amp; Asset Generator</h3>
+            <div class="sys-card-top">
+              <div class="sys-badge amber">CREATIVE AUTOMATION &middot; AD-TECH</div>
+              <span class="sys-impact-tag text-gold">⚡ 10x Asset Velocity</span>
+            </div>
+
+            <h3 class="sys-title">Creativium Asset Engine</h3>
             
-            <div class="sys-block-group">
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-problem">
-                  <span class="block-icon">🎯</span> Business Problem
-                </span>
-                <p class="sys-block-text">
-                  Global marketing campaigns require hundreds of localized, dimension-specific ad banners per rollout. Creative designers spent over 60% of their bandwidth on repetitive resizing, re-layout, and copy adjustments.
-                </p>
-              </div>
+            <p class="sys-punchline">
+              GenAI marketing platform automating campaign-ready banner generation and localized resizing with brand-safety guardrails.
+            </p>
 
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-solution">
-                  <span class="block-icon">⚙️</span> Architecture &amp; Solution
-                </span>
-                <p class="sys-block-text">
-                  Developed an automated creative generation engine utilizing <strong>Imagen 3, dynamic prompt templating, automated brand-palette compliance, and intelligent layout composition</strong> tailored for rapid omni-channel deployment.
-                </p>
+            <div class="sys-stat-row">
+              <div class="sys-stat-chip">
+                <span class="stat-num text-gold">10x</span>
+                <span class="stat-lbl">Asset Output</span>
               </div>
-
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-impact">
-                  <span class="block-icon">📈</span> Measurable Business Impact
-                </span>
-                <ul class="sys-impact-list">
-                  <li><strong>10x Campaign Asset Velocity:</strong> Accelerated marketing asset turnaround from days to minutes across global agency accounts.</li>
-                  <li><strong>100% Brand Guidelines Adherence:</strong> Built-in visual guardrails eliminated off-brand typography, color drifts, and logo violations.</li>
-                </ul>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-emerald">100%</span>
+                <span class="stat-lbl">Brand Adherence</span>
+              </div>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-cyan">Imagen 3</span>
+                <span class="stat-lbl">Image Gen</span>
               </div>
             </div>
 
+            <details class="sys-details-drawer">
+              <summary class="drawer-trigger">
+                <span>View Architecture &amp; Business Impact</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-content">
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-prob">Problem</span>
+                  <p>Designers spent 60%+ of work hours manually adapting ad assets across multi-format channels.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-sol">Solution</span>
+                  <p>Imagen 3 pipeline with automated layout orchestration, aspect adaptation, and brand palette validation.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-imp">Impact</span>
+                  <p>Delivered 10x faster campaign turnaround while ensuring zero off-brand typography or color violations.</p>
+                </div>
+              </div>
+            </details>
+
             <div class="sys-tech-row">
               <span>Imagen 3</span>
-              <span>Prompt Engineering</span>
-              <span>Brand Safety Guardrails</span>
-              <span>Asset Resizing</span>
-              <span>Ad-Tech APIs</span>
+              <span>Dynamic Prompting</span>
+              <span>Layout Engine</span>
+              <span>Brand Safety</span>
             </div>
           </div>
 
           <!-- System 6: AI RFP Analyzer & Document Intelligence -->
           <div class="system-card magnetic-hover" data-hud-override="RFP ANALYZER: ARCHITECTURE, COSTING & SLA RECOMMENDATIONS">
-            <div class="sys-badge cyan">DOCUMENT INTELLIGENCE &middot; PRE-SALES AUTOMATION</div>
-            <h3 class="sys-title">AI Enterprise RFP Intelligence Engine</h3>
+            <div class="sys-card-top">
+              <div class="sys-badge cyan">DOC INTELLIGENCE &middot; PRE-SALES</div>
+              <span class="sys-impact-tag text-cyan">⚡ 75% Faster Bids</span>
+            </div>
+
+            <h3 class="sys-title">AI RFP Intelligence Engine</h3>
             
-            <div class="sys-block-group">
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-problem">
-                  <span class="block-icon">🎯</span> Business Problem
-                </span>
-                <p class="sys-block-text">
-                  Enterprise solution architects and bid managers were spending 40+ hours per enterprise RFP to manually extract compliance requirements, estimate cloud computing costs, and align contractual SLA specifications.
-                </p>
-              </div>
+            <p class="sys-punchline">
+              Enterprise document intelligence agent decomposing 200+ page RFPs into turnkey architecture specs, SLA matrices, and cloud costing.
+            </p>
 
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-solution">
-                  <span class="block-icon">⚙️</span> Architecture &amp; Solution
-                </span>
-                <p class="sys-block-text">
-                  Engineered a multi-agent document analysis workflow with <strong>Gemini 1.5 Pro and Google ADK</strong> that ingests dense 200+ page RFPs, decomposes deliverables into structured schemas, and generates turnkey architecture recommendations and financial models.
-                </p>
+            <div class="sys-stat-row">
+              <div class="sys-stat-chip">
+                <span class="stat-num text-cyan">&lt;4 Hours</span>
+                <span class="stat-lbl">Bid Turnaround</span>
               </div>
-
-              <div class="sys-sub-block">
-                <span class="sys-block-label label-impact">
-                  <span class="block-icon">📈</span> Measurable Business Impact
-                </span>
-                <ul class="sys-impact-list">
-                  <li><strong>75% Acceleration in Bid Turnaround:</strong> Cut RFP analysis and initial proposal generation time from days to under 4 hours.</li>
-                  <li><strong>Risk Mitigation:</strong> Identified hidden SLA penalties and non-standard compliance clauses prior to proposal submission.</li>
-                </ul>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-gold">Gemini 1.5</span>
+                <span class="stat-lbl">Pro Long Context</span>
+              </div>
+              <div class="sys-stat-chip">
+                <span class="stat-num text-emerald">Zero Risk</span>
+                <span class="stat-lbl">SLA Detection</span>
               </div>
             </div>
+
+            <details class="sys-details-drawer">
+              <summary class="drawer-trigger">
+                <span>View Architecture &amp; Business Impact</span>
+                <span class="drawer-chevron">▾</span>
+              </summary>
+              <div class="drawer-content">
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-prob">Problem</span>
+                  <p>Bid architects spent 40+ hours per RFP manually parsing requirements, SLAs, and cloud cost estimates.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-sol">Solution</span>
+                  <p>Gemini 1.5 Pro + Google ADK agent structuring complex requirements into JSON schemas and cost models.</p>
+                </div>
+                <div class="drawer-item">
+                  <span class="drawer-tag tag-imp">Impact</span>
+                  <p>Accelerated bid turnaround by 75%; proactively flagged non-standard SLA penalties prior to submission.</p>
+                </div>
+              </div>
+            </details>
 
             <div class="sys-tech-row">
               <span>Gemini 1.5 Pro</span>
               <span>Google ADK</span>
               <span>Cost Modeling</span>
-              <span>Contractual SLA Extraction</span>
-              <span>Structured JSON</span>
+              <span>SLA Extraction</span>
             </div>
           </div>
 
