@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreyans Jain — Applied LLM & Agentic AI Systems Engineer</title>
+  <meta name="description" content="Portfolio of Shreyans Jain — AI Engineer with 2 years of experience designing and shipping production-grade LLM, Agentic AI, RAG, and Voice AI systems.">
+
+  <!-- Typography: Old Money Editorial Elegance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body class="old-money-theme">
+  <!-- Interactive Synaptic 3D Canvas -->
+  <canvas id="neural-canvas" class="neural-bg-canvas"></canvas>
+
+  <!-- Interactive Story Cursor HUD -->
+  <div id="cursor-hud" class="cursor-hud">
+    <div class="hud-core"></div>
+    <div class="hud-ring"></div>
+    <div class="hud-label" id="hud-label">
+      <span class="hud-chapter">ACT 00</span>
+      <span class="hud-text">EXPLORING MIND</span>
+    </div>
+  </div>
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Professional Full-Width Fixed Header -->
+  <header class="luxury-header">
+    <div class="header-inner">
+      <a href="#act-0" class="brand-entity">
+        <div class="brand-avatar-frame">
+          <img src="/shreyans.jpg" alt="Shreyans Jain" class="brand-avatar-photo">
+        </div>
+        <div class="brand-titles">
+          <span class="brand-title-name">Shreyans Jain</span>
+          <span class="brand-title-sub">AI Engineer &middot; dentsu</span>
+        </div>
+      </a>
+
+      <!-- Clean Navigation Links -->
+      <nav class="nav-menu">
+        <a href="#act-0" class="menu-link active" data-act="0">Overview</a>
+        <a href="#act-skills" class="menu-link" data-act="skills">Skills</a>
+        <a href="#act-systems" class="menu-link" data-act="systems">Systems</a>
+        <a href="#act-journey" class="menu-link" data-act="journey">Experience</a>
+        <a href="#act-3" class="menu-link" data-act="3">Certifications</a>
+        <a href="#act-4" class="menu-link" data-act="4">Contact</a>
+      </nav>
+
+      <!-- Separate Header Right Action Group -->
+      <div class="header-actions">
+        <a href="tel:+919958510891" class="tel-link-btn">
+          <span class="tel-icon">📞</span>
+          <span class="tel-text">+91 9958510891</span>
+        </a>
+        <a href="#act-4" class="header-cta-gold">
+          <span>Get in Touch</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="story-wrapper">
+
+    <!-- ==================== ACT 00: OVERVIEW ==================== -->
+    <section class="story-act" id="act-0" data-chapter="ACT 00" data-hud="PORTFOLIO OVERVIEW">
+      <div class="act-inner hero-story">
+        
+        <!-- Authentic Developer Intro Block -->
+        <div class="developer-hero-grid">
+          
+          <!-- Left Column: Personal Developer Intro -->
+          <div class="dev-intro-col">
+            <div class="dev-status-pill">
+              <span class="pulse-dot-green"></span>
+              <span>AVAILABLE FOR NEW ROLES &middot; APPLIED AI / LLM ENGINEER</span>
+            </div>
+
+            <h1 class="dev-hero-name">
+              I'm <span class="text-glow-gradient">Shreyans Jain</span>
+            </h1>
+
+            <h2 class="dev-hero-tagline">
+              AI Engineer &middot; Builder of Autonomous Agent Swarms, Low-Latency Voice AI &amp; Enterprise RAG
+            </h2>
+
+            <p class="dev-hero-bio">
+              I turn bleeding-edge Generative AI research into scalable, resilient production systems. Currently engineering agentic workflows and voice intelligence at <strong class="highlight-text">dentsu</strong>, previously fine-tuning open-weight LLMs at <strong class="highlight-text">BusinessNext</strong>. Based in Gurugram, India &mdash; shipping systems that solve real problems.
+            </p>
+
+            <!-- Quick Developer Badges -->
+            <div class="dev-stack-pills">
+              <span class="stack-badge"><i class="dev-icon">⚡</i> LangGraph &amp; ADK</span>
+              <span class="stack-badge"><i class="dev-icon">🎙️</i> Whisper &amp; Voice AI</span>
+              <span class="stack-badge"><i class="dev-icon">🔍</i> Hybrid RAG</span>
+              <span class="stack-badge"><i class="dev-icon">🧪</i> LLaMA / Mistral Tuning</span>
+              <span class="stack-badge"><i class="dev-icon">🛡️</i> Guardrails &amp; Eval</span>
+            </div>
+
+            <!-- Primary Action Buttons for Recruiters & Peers -->
+            <div class="dev-cta-group">
+              <a href="#act-systems" class="btn-dev-primary">
+                <span>View Shipped Systems</span>
+                <span class="btn-arrow">→</span>
+              </a>
+              <a href="https://github.com/Shreyyyyy?tab=repositories" target="_blank" rel="noopener" class="btn-dev-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repos</span>
+              </a>
+              <a href="https://www.linkedin.com/in/shreyans-jain-9255351a7/" target="_blank" rel="noopener" class="btn-dev-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Personal Photo & Interactive Developer Terminal Card -->
+          <div class="dev-card-col">
+            <div class="dev-profile-card">
+              <div class="dev-card-header">
+                <div class="dev-avatar-group">
+                  <div class="dev-photo-ring">
+                    <img src="/shreyans.jpg" alt="Shreyans Jain" class="dev-photo-img">
+                  </div>
+                  <div class="dev-identity-meta">
+                    <h3 class="dev-id-name">Shreyans Jain</h3>
+                    <span class="dev-id-handle">@Shreyyyyy &middot; Gurugram, IN</span>
+                  </div>
+                </div>
+                <div class="dev-ping-pill">
+                  <span class="live-dot"></span>
+                  <span>Active Now</span>
+                </div>
+              </div>
+
+              <!-- Interactive Developer Code Terminal Snippet -->
+              <div class="dev-terminal-preview">
+                <div class="term-dots">
+                  <span class="td-dot red"></span>
+                  <span class="td-dot yellow"></span>
+                  <span class="td-dot green"></span>
+                  <span class="td-title">shreyans_engineer.py</span>
+                </div>
+                <div class="term-code-body">
+                  <p><span class="c-kw">const</span> <span class="c-var">engineer</span> = {</p>
+                  <p class="indent-1"><span class="c-prop">name</span>: <span class="c-str">"Shreyans Jain"</span>,</p>
+                  <p class="indent-1"><span class="c-prop">focus</span>: <span class="c-str">"Agentic Swarms &amp; Voice AI"</span>,</p>
+                  <p class="indent-1"><span class="c-prop">currentRole</span>: <span class="c-str">"AI Engineer @ dentsu"</span>,</p>
+                  <p class="indent-1"><span class="c-prop">experience</span>: <span class="c-num">2.0</span>, <span class="c-comm">// years production</span></p>
+                  <p class="indent-1"><span class="c-prop">coreToolchain</span>: [</p>
+                  <p class="indent-2"><span class="c-str">"LangGraph"</span>, <span class="c-str">"Whisper"</span>, <span class="c-str">"FastAPI"</span>,</p>
+                  <p class="indent-2"><span class="c-str">"DeepEval"</span>, <span class="c-str">"Docker"</span>, <span class="c-str">"Python"</span></p>
+                  <p class="indent-1">],</p>
+                  <p class="indent-1"><span class="c-prop">mission</span>: <span class="c-str">"Build resilient AI systems that humans trust."</span></p>
+                  <p>};</p>
+                </div>
+              </div>
+
+              <!-- Production Impact Metrics Inside Dev Card -->
+              <div class="dev-metric-ribbon">
+                <div class="dev-ribbon-item">
+                  <span class="ribbon-val">&lt;1 min</span>
+                  <span class="ribbon-lbl">RAG Speed</span>
+                </div>
+                <div class="dev-ribbon-item">
+                  <span class="ribbon-val">+30%</span>
+                  <span class="ribbon-lbl">Tuned Accuracy</span>
+                </div>
+                <div class="dev-ribbon-item">
+                  <span class="ribbon-val">-40%</span>
+                  <span class="ribbon-lbl">Faults Cut</span>
+                </div>
+                <div class="dev-ribbon-item">
+                  <span class="ribbon-val">5 Concurr.</span>
+                  <span class="ribbon-lbl">Voice Channels</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="scroll-cue">
+          <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+          <span class="cue-text">Scroll down to explore skills, systems &amp; journey</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACT 01: COMPREHENSIVE TECHNICAL SKILLS RADAR ==================== -->
+    <section class="story-act" id="act-skills" data-chapter="ACT 01" data-hud="TECHNICAL SKILLS & PROFICIENCIES">
+      <div class="act-inner">
+        
+        <div class="recruiter-pill-banner">
+          <span class="recruiter-star">📋</span>
+          <span>COMPREHENSIVE TECHNICAL SKILLS &amp; PROFICIENCIES</span>
+          <span class="recruiter-badge">ALL-IN-ONE MATRIX</span>
+        </div>
+
+        <div class="story-header-left">
+          <span class="act-counter">TECHNICAL SPECIFICATIONS &amp; COMPETENCIES</span>
+          <h2 class="act-title">Core capabilities &amp; toolchains.<br><span class="text-glow-gradient">Tested across real enterprise deployments.</span></h2>
+          <p class="act-desc">
+            A complete, categorized inventory of my technical skills &mdash; from agent frameworks and foundation models to MLOps, backend infrastructure, and spoken languages.
+          </p>
+        </div>
+
+        <!-- Comprehensive 6-Pillar Skills Grid -->
+        <div class="comprehensive-skills-grid">
+
+          <!-- Pillar 1: Agentic AI & Swarms -->
+          <div class="skill-matrix-box magnetic-hover" data-hud-override="AGENTIC ORCHESTRATION & STATEFUL REASONING">
+            <div class="matrix-box-header">
+              <span class="matrix-box-icon">🤖</span>
+              <h3 class="matrix-box-title">Agentic AI &amp; LLMs</h3>
+            </div>
+            <p class="matrix-box-sub">Multi-agent swarms, state machine workflows &amp; autonomous tool routing.</p>
+            <div class="matrix-tags">
+              <span class="pill-gold">LangGraph (State Graphs)</span>
+              <span class="pill-gold">LangChain (v1)</span>
+              <span class="pill-gold">Google ADK</span>
+              <span class="pill-gold">MCP (Model Context Protocol)</span>
+              <span>Multi-Agent Swarms</span>
+              <span>Structured Tool Calling</span>
+              <span>SQL Tool Calling</span>
+              <span>Task Delegation &amp; Fallbacks</span>
+              <span>Prompt Optimization</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Multimodal & Voice AI -->
+          <div class="skill-matrix-box magnetic-hover" data-hud-override="REALTIME VOICE AI & GENERATIVE VIDEO">
+            <div class="matrix-box-header">
+              <span class="matrix-box-icon">🎙️</span>
+              <h3 class="matrix-box-title">Voice AI &amp; Multimodal</h3>
+            </div>
+            <p class="matrix-box-sub">Low-latency audio streaming &amp; multi-agent generative video pipelines.</p>
+            <div class="matrix-tags">
+              <span class="pill-gold">Whisper STT (Real-Time)</span>
+              <span class="pill-gold">Google Veo (Video Gen)</span>
+              <span class="pill-gold">Google Imagen 3</span>
+              <span class="pill-gold">Gemini 1.5 Pro &amp; Flash</span>
+              <span>Neural TTS</span>
+              <span>Voice Activity Detection (VAD)</span>
+              <span>Bidirectional WebSockets</span>
+              <span>Character &amp; Scene Continuity</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3: RAG & Search -->
+          <div class="skill-matrix-box magnetic-hover" data-hud-override="ENTERPRISE RAG & VECTOR SEARCH">
+            <div class="matrix-box-header">
+              <span class="matrix-box-icon">🔍</span>
+              <h3 class="matrix-box-title">RAG &amp; Information Retrieval</h3>
+            </div>
+            <p class="matrix-box-sub">Sub-minute lookup across massive unstructured document corpora.</p>
+            <div class="matrix-tags">
+              <span class="pill-gold">Hybrid Vector Search</span>
+              <span class="pill-gold">Context Orchestration</span>
+              <span class="pill-gold">Multimodal Embeddings</span>
+              <span class="pill-gold">Vector Databases</span>
+              <span>Document Parsers</span>
+              <span>Semantic Search</span>
+              <span>Re-ranking Pipelines</span>
+              <span>Knowledge Graphs</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4: AI Safety & Evaluation -->
+          <div class="skill-matrix-box magnetic-hover" data-hud-override="DEEPEVAL & GUARDRAILS-AI">
+            <div class="matrix-box-header">
+              <span class="matrix-box-icon">🛡️</span>
+              <h3 class="matrix-box-title">Safety, Governance &amp; Eval</h3>
+            </div>
+            <p class="matrix-box-sub">Enterprise guardrails, benchmark scoring, and hallucination reduction.</p>
+            <div class="matrix-tags">
+              <span class="pill-gold">DeepEval Benchmarks</span>
+              <span class="pill-gold">Guardrails-AI Interceptor</span>
+              <span class="pill-gold">Hallucination Mitigation (-40%)</span>
+              <span>Contextual Precision</span>
+              <span>Synthetic QA Datasets</span>
+              <span>PII Masking &amp; Anonymization</span>
+              <span>Safety Telemetry</span>
+            </div>
+          </div>
+
+          <!-- Pillar 5: Backend, Fine-Tuning & MLOps -->
+          <div class="skill-matrix-box magnetic-hover" data-hud-override="FINE-TUNING & BACKEND INFRASTRUCTURE">
+            <div class="matrix-box-header">
+              <span class="matrix-box-icon">⚙️</span>
+              <h3 class="matrix-box-title">Backend, Tuning &amp; MLOps</h3>
+            </div>
+            <p class="matrix-box-sub">High-throughput microservices, open-weight adaptation, and containerization.</p>
+            <div class="matrix-tags">
+              <span class="pill-gold">LLaMA &amp; Mistral Tuning (+30%)</span>
+              <span class="pill-gold">FastAPI Asynchronous APIs</span>
+              <span class="pill-gold">Docker Containerization</span>
+              <span class="pill-gold">Kafka Event Bus</span>
+              <span>MLflow Experiment Tracking</span>
+              <span>CI/CD Automated Pipelines</span>
+              <span>SQL &amp; Relational Schemas</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+
+          <!-- Pillar 6: Languages & Spoken Proficiencies -->
+          <div class="skill-matrix-box magnetic-hover" data-hud-override="PROGRAMMING & SPOKEN LANGUAGES">
+            <div class="matrix-box-header">
+              <span class="matrix-box-icon">🌐</span>
+              <h3 class="matrix-box-title">Languages &amp; International</h3>
+            </div>
+            <p class="matrix-box-sub">Core coding languages and global linguistic communication skills.</p>
+            <div class="matrix-tags">
+              <span class="pill-gold">Python (Expert)</span>
+              <span class="pill-gold">SQL (Advanced)</span>
+              <span class="pill-gold">English (Full Professional)</span>
+              <span class="pill-gold">Hindi (Native / Bilingual)</span>
+              <span>German (Elementary)</span>
+              <span>Spanish (Elementary)</span>
+              <span>JavaScript / Node.js</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACT 02: REAL-WORLD PRODUCTION SHIPPED SYSTEMS ==================== -->
+    <section class="story-act" id="act-systems" data-chapter="ACT 02" data-hud="ENTERPRISE PRODUCTION SYSTEMS">
+      <div class="act-inner">
+        <div class="story-header-left">
+          <span class="act-counter">ACT 02 / SHIPPED PRODUCTION SYSTEMS</span>
+          <h2 class="act-title">Enterprise implementations.<br><span class="text-glow-gradient">Proven business results.</span></h2>
+          <p class="act-desc">
+            Directly from my work at dentsu and BusinessNext &mdash; systems built with LangGraph, Google ADK, Gemini, Whisper, Veo, MCP, DeepEval, and Guardrails-AI.
+          </p>
+        </div>
+
+        <!-- Dynamic 6-Card Interactive Portfolio Grid -->
+        <div class="systems-portfolio-grid">
+
+          <!-- System 1: Flipkart Talk2Data -->
+          <div class="system-card magnetic-hover" data-hud-override="FLIPKART TALK2DATA: MULTI-AGENT SQL & ANALYTICS">
+            <div class="sys-badge cyan">ENTERPRISE ANALYTICS</div>
+            <h3 class="sys-title">Flipkart Talk2Data</h3>
+            <p class="sys-desc">
+              Built a multi-agent LLM analytics system using <strong>LangGraph, Google ADK, Gemini, SQL generation, tool calling, and RAG</strong> for natural-language data analysis, optimization, and forecasting.
+            </p>
+            <div class="sys-tech-row">
+              <span>LangGraph</span>
+              <span>Google ADK</span>
+              <span>Gemini</span>
+              <span>SQL Tool Calling</span>
+              <span>RAG</span>
+            </div>
+          </div>
+
+          <!-- System 2: Enterprise RAG Platform -->
+          <div class="system-card magnetic-hover" data-hud-override="ENTERPRISE RAG: 60+ MINS DOWN TO UNDER 1 MIN">
+            <div class="sys-badge emerald">KNOWLEDGE RETRIEVAL</div>
+            <h3 class="sys-title">Enterprise RAG Platform</h3>
+            <p class="sys-desc">
+              Developed production RAG pipelines reducing document lookup time from <strong>60+ minutes to under 1 minute</strong>. Hybrid vector search, context orchestration, and high-throughput document processing.
+            </p>
+            <div class="sys-tech-row">
+              <span>Embeddings</span>
+              <span>Vector DB</span>
+              <span>Semantic Search</span>
+              <span>Context Routing</span>
+            </div>
+          </div>
+
+          <!-- System 3: Multilingual Voice AI -->
+          <div class="system-card magnetic-hover" data-hud-override="VOICE AI: 5 CONCURRENT CHANNELS & VAD">
+            <div class="sys-badge purple">CONVERSATIONAL AUDIO</div>
+            <h3 class="sys-title">Multilingual Voice AI Bot</h3>
+            <p class="sys-desc">
+              Engineered real-time Voice AI pipeline using <strong>Whisper/STT, LLMs, TTS, WebSockets, FastAPI, and VAD</strong>. Supports 5 concurrent conversations for product support and test-drive booking without human handoff.
+            </p>
+            <div class="sys-tech-row">
+              <span>Whisper STT</span>
+              <span>FastAPI WebSockets</span>
+              <span>Neural TTS</span>
+              <span>VAD Streaming</span>
+            </div>
+          </div>
+
+          <!-- System 4: Agentic Video & Film Studio -->
+          <div class="system-card magnetic-hover" data-hud-override="AI FILM STUDIO: DIRECTOR, STORYBOARD, VEO & QA AGENTS">
+            <div class="sys-badge blue">MULTIMODAL GENAI</div>
+            <h3 class="sys-title">Agentic Video Generation Pipeline</h3>
+            <p class="sys-desc">
+              Designed multi-agent generative video workflow with <strong>Director, Storyboard, Video Generation, and QA agents</strong> orchestrated via LangGraph, powered by Google Veo &amp; Nano Banana for character continuity.
+            </p>
+            <div class="sys-tech-row">
+              <span>Google Veo</span>
+              <span>LangGraph DAG</span>
+              <span>Storyboard Agent</span>
+              <span>QA Validation</span>
+            </div>
+          </div>
+
+          <!-- System 5: Creativium Creative Banner Generator -->
+          <div class="system-card magnetic-hover" data-hud-override="CREATIVIUM: CAMPAIGN-READY BANNER AUTOMATION">
+            <div class="sys-badge amber">CREATIVE AUTOMATION</div>
+            <h3 class="sys-title">Creativium Banner Generator</h3>
+            <p class="sys-desc">
+              Built an AI-powered creative banner generation workflow that automates the creation and customization of marketing banners using generative AI, accelerating campaign asset production for global brands.
+            </p>
+            <div class="sys-tech-row">
+              <span>Prompt Orchestration</span>
+              <span>Image Gen Models</span>
+              <span>Asset Resizing</span>
+              <span>Brand Safety</span>
+            </div>
+          </div>
+
+          <!-- System 6: AI RFP Analyzer & Document Intelligence -->
+          <div class="system-card magnetic-hover" data-hud-override="RFP ANALYZER: ARCHITECTURE, COSTING & SLA RECOMMENDATIONS">
+            <div class="sys-badge cyan">DOCUMENT INTELLIGENCE</div>
+            <h3 class="sys-title">AI RFP Analyzer</h3>
+            <p class="sys-desc">
+              LLM-powered document intelligence system using <strong>Gemini and Google ADK multi-agent workflows</strong> to parse complex enterprise RFPs, generating architecture recommendations, cost modeling, and SLA specs.
+            </p>
+            <div class="sys-tech-row">
+              <span>Gemini 1.5 Pro</span>
+              <span>Google ADK</span>
+              <span>Cost Modeling</span>
+              <span>Structured JSON</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACT 02: THE FULL CHRONOLOGICAL JOURNEY ==================== -->
+    <section class="story-act" id="act-journey" data-chapter="ACT 02" data-hud="THE COMPLETE 5-PHASE JOURNEY">
+      <div class="act-inner">
+        <div class="story-header-left">
+          <span class="act-counter">ACT 02 / THE CHRONOLOGICAL ODYSSEY</span>
+          <h2 class="act-title">From academic lecturer<br><span class="text-glow-gradient">to enterprise AI architect.</span></h2>
+          <p class="act-desc">
+            The complete journey detailing every milestone across industry, teaching, research, and computer science foundations.
+          </p>
+        </div>
+
+        <div class="journey-track-container">
+          <div class="journey-laser-line">
+            <div class="laser-traveler"></div>
+          </div>
+
+          <!-- 1. dentsu (Present) -->
+          <div class="journey-node-card active-now" data-hud-override="DENTSU: LEADING AI SYSTEMS (MAY 2026 - PRESENT)">
+            <div class="journey-dot-orbit">
+              <span class="orbit-ring"></span>
+              <span class="orbit-center"></span>
+            </div>
+            <div class="journey-card-content magnetic-hover">
+              <div class="journey-time-tag">
+                <span class="tag-status live">CURRENT ROLE</span>
+                <span class="tag-period">May 2026 &mdash; Present (5 months)</span>
+              </div>
+              <h3 class="journey-company">dentsu &middot; <span class="journey-role">Artificial Intelligence Engineer</span></h3>
+              <p class="journey-location">📍 Gurugram, Haryana, India</p>
+              <p class="journey-story">
+                Designing and shipping production-grade LLM, Agentic AI, and Voice AI systems:
+              </p>
+              <ul class="journey-bullets">
+                <li><span class="j-glow">⚡</span> <strong>Flipkart Talk2Data:</strong> Multi-agent natural-language SQL analysis, forecasting, and data optimization.</li>
+                <li><span class="j-glow">⚡</span> <strong>Enterprise RAG Platform:</strong> Reduced lookup time from 60+ minutes to under 1 minute.</li>
+                <li><span class="j-glow">⚡</span> <strong>Multilingual Voice AI:</strong> 5 concurrent conversations for product support &amp; test-drive booking without human handoff.</li>
+                <li><span class="j-glow">⚡</span> <strong>AI Film Studio &amp; Veo:</strong> Multi-agent storyboard and continuous video generation pipeline.</li>
+                <li><span class="j-glow">⚡</span> <strong>Creativium Banner Generator:</strong> Automated brand-compliant marketing banner creation.</li>
+              </ul>
+              <div class="journey-badges">
+                <span>LangGraph</span>
+                <span>Google ADK</span>
+                <span>Gemini</span>
+                <span>Google Veo</span>
+                <span>MCP</span>
+                <span>Whisper STT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. BUSINESSNEXT: Agentic AI Engineer -->
+          <div class="journey-node-card" data-hud-override="BUSINESSNEXT: AGENTIC AI ENGINEER (JUNE 2025 - MAY 2026)">
+            <div class="journey-dot-orbit">
+              <span class="orbit-ring"></span>
+              <span class="orbit-center purple"></span>
+            </div>
+            <div class="journey-card-content magnetic-hover">
+              <div class="journey-time-tag">
+                <span class="tag-status">ENTERPRISE SCALE</span>
+                <span class="tag-period">June 2025 &mdash; May 2026 (1 year)</span>
+              </div>
+              <h3 class="journey-company">BUSINESSNEXT &middot; <span class="journey-role">Agentic AI Engineer</span></h3>
+              <p class="journey-location">📍 Noida, Uttar Pradesh, India</p>
+              <p class="journey-story">
+                Architected enterprise-scale multi-agent CRM systems and model fine-tuning:
+              </p>
+              <ul class="journey-bullets">
+                <li><span class="j-glow purple">⚡</span> Automated CRM email workflows, improving enterprise response efficiency by <strong>35%</strong>.</li>
+                <li><span class="j-glow purple">⚡</span> Architected multi-agent workflows with tool calling, orchestration, and <strong>Guardrails-AI</strong>.</li>
+                <li><span class="j-glow purple">⚡</span> Fine-tuned <strong>LLaMA &amp; Mistral</strong> for structured JSON and tool calling, lifting accuracy by <strong>+30%</strong>.</li>
+                <li><span class="j-glow purple">⚡</span> Centralized LLM evaluation, telemetry, and observability platform with <strong>DeepEval</strong>.</li>
+              </ul>
+              <div class="journey-badges">
+                <span>LangChain (v1)</span>
+                <span>Fine-Tuned LLaMA</span>
+                <span>Fine-Tuned Mistral</span>
+                <span>Guardrails-AI</span>
+                <span>DeepEval</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. BUSINESSNEXT: Generative AI Engineer -->
+          <div class="journey-node-card" data-hud-override="BUSINESSNEXT: GENERATIVE AI ENGINEER (JAN 2025 - MAY 2025)">
+            <div class="journey-dot-orbit">
+              <span class="orbit-ring"></span>
+              <span class="orbit-center blue"></span>
+            </div>
+            <div class="journey-card-content magnetic-hover">
+              <div class="journey-time-tag">
+                <span class="tag-status">INTERNAL DEV INNOVATION</span>
+                <span class="tag-period">January 2025 &mdash; May 2025 (5 months)</span>
+              </div>
+              <h3 class="journey-company">BUSINESSNEXT &middot; <span class="journey-role">Generative AI Engineer</span></h3>
+              <p class="journey-location">📍 Noida, Uttar Pradesh, India</p>
+              <ul class="journey-bullets">
+                <li><span class="j-glow">⚡</span> Built Agentic AI solutions automating Scrum ceremonies, backlog analysis, and sprint planning.</li>
+                <li><span class="j-glow">⚡</span> Processed <strong>50+ Azure DevOps work items per sprint</strong> for structured engineering insights and risk detection.</li>
+                <li><span class="j-glow">⚡</span> Engineered a <strong>QA Automation AI Agent</strong> analyzing PR diffs to auto-generate test suites and trigger CI/CD.</li>
+                <li><span class="j-glow">⚡</span> Generated synthetic training datasets to enforce instruction following and data privacy.</li>
+              </ul>
+              <div class="journey-badges">
+                <span>QA Automation Agents</span>
+                <span>Azure DevOps Pipeline</span>
+                <span>Synthetic Datasets</span>
+                <span>FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Christ University: Lecturer -->
+          <div class="journey-node-card" data-hud-override="CHRIST UNIVERSITY: LECTURER IN COMPUTER SCIENCE (MAR 2024 - DEC 2024)">
+            <div class="journey-dot-orbit">
+              <span class="orbit-ring"></span>
+              <span class="orbit-center emerald"></span>
+            </div>
+            <div class="journey-card-content magnetic-hover">
+              <div class="journey-time-tag">
+                <span class="tag-status">ACADEMIC MENTORSHIP</span>
+                <span class="tag-period">March 2024 &mdash; December 2024 (10 months)</span>
+              </div>
+              <h3 class="journey-company">Christ University &middot; <span class="journey-role">Lecturer</span></h3>
+              <p class="journey-location">📍 Bengaluru, Karnataka, India</p>
+              <p class="journey-story">
+                Taught Python programming, computer science fundamentals, and practical software engineering. Mentored students on algorithmic problem-solving and software architecture.
+              </p>
+              <div class="journey-badges">
+                <span>Python Instruction</span>
+                <span>Algorithms &amp; Data Structures</span>
+                <span>Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Academic Foundations: MCA & BCA -->
+          <div class="journey-node-card" data-hud-override="EDUCATION: CHRIST MCA (2023-2025) & VIT BCA (2020-2023)">
+            <div class="journey-dot-orbit">
+              <span class="orbit-ring"></span>
+              <span class="orbit-center amber"></span>
+            </div>
+            <div class="journey-card-content magnetic-hover">
+              <div class="journey-time-tag">
+                <span class="tag-status">ACADEMIC FOUNDATION</span>
+                <span class="tag-period">2020 &mdash; 2025</span>
+              </div>
+              <h3 class="journey-company">Christ University &amp; VIT Vellore</h3>
+              <p class="journey-location">📍 Bangalore &middot; Vellore</p>
+              <p class="journey-story">
+                <strong>Master of Computer Applications (MCA)</strong> &mdash; Christ University (July 2023 &ndash; May 2025)<br>
+                <strong>Bachelor of Computer Applications (BCA)</strong>, Computer Science &mdash; Vellore Institute of Technology (July 2020 &ndash; May 2023)
+              </p>
+              <div class="journey-badges">
+                <span>MCA Post-Grad</span>
+                <span>BCA Computer Science</span>
+                <span>Distributed Systems</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACT 03: THE SHIELD (Safety, Guardrails & Certifications) ==================== -->
+    <section class="story-act" id="act-3" data-chapter="ACT 03" data-hud="OBSERVABILITY, SAFETY & GCP CERTS">
+      <div class="act-inner">
+        <div class="story-header-left">
+          <span class="act-counter">ACT 03 / RELIABILITY &amp; ACCREDITATIONS</span>
+          <h2 class="act-title">Safe in execution.<br><span class="text-emerald">Validated by Google.</span></h2>
+          <p class="act-desc">
+            Production AI requires rigorous guarantees. Telemetry, Guardrails-AI, and synthetic evaluation with DeepEval ensure zero-hallucination compliance.
+          </p>
+        </div>
+
+        <div class="eval-dashboard-card" data-hud-override="DEEPEVAL BENCHMARKS & GOOGLE CLOUD ACCREDITATIONS">
+          <div class="eval-card-header">
+            <div class="eval-title-group">
+              <span class="eval-badge">DeepEval &amp; Guardrails-AI Active Suite</span>
+              <span class="eval-status">Enterprise Production Telemetry</span>
+            </div>
+            <span class="eval-metric-stat">-40% Execution Faults</span>
+          </div>
+
+          <div class="bench-list">
+            <div class="bench-item" data-hud-override="RAG FAITHFULNESS ACROSS ENTERPRISE KNOWLEDGE">
+              <div class="bench-meta">
+                <span>RAG Faithfulness &amp; Groundedness (Enterprise Docs)</span>
+                <span class="bench-score text-emerald">98.4%</span>
+              </div>
+              <div class="bench-track"><div class="bench-bar emerald" style="width: 98.4%;"></div></div>
+            </div>
+
+            <div class="bench-item" data-hud-override="TOOL CALLING ARGUMENT RECOVERY">
+              <div class="bench-meta">
+                <span>Tool Calling Argument Precision (Fine-tuned Mistral)</span>
+                <span class="bench-score text-cyan">+30% Boost</span>
+              </div>
+              <div class="bench-track"><div class="bench-bar cyan" style="width: 97.1%;"></div></div>
+            </div>
+
+            <div class="bench-item" data-hud-override="HALLUCINATION MITIGATION RATIO">
+              <div class="bench-meta">
+                <span>Guardrails-AI Interception Rate</span>
+                <span class="bench-score text-purple">99.6%</span>
+              </div>
+              <div class="bench-track"><div class="bench-bar purple" style="width: 99.6%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Google Cloud Certifications Directly from Profile -->
+          <div class="cert-endorsements">
+            <span class="endorse-title">Google Cloud &amp; Vertex AI Certifications:</span>
+            <div class="cert-capsules">
+              <span class="capsule">✦ Develop GenAI Apps with Gemini and Streamlit</span>
+              <span class="capsule">✦ Intermediate GCP: AI/ML Services in GCP</span>
+              <span class="capsule">✦ Prompt Design in Vertex AI Skill Badge</span>
+              <span class="capsule">✦ Build Real World AI Applications with Gemini &amp; Imagen</span>
+              <span class="capsule">✦ Explore Generative AI with Gemini API in Vertex AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACT 04: EXECUTIVE SUITE & CONTACT ==================== -->
+    <section class="story-act" id="act-4" data-chapter="ACT 04" data-hud="EXECUTIVE COMMUNICATIONS">
+      <div class="act-inner contact-luxury-container">
+        
+        <div class="recruiter-pill-banner">
+          <span class="recruiter-star">✦</span>
+          <span>EXECUTIVE ENGAGEMENTS &middot; DIRECT ACCESS</span>
+          <span class="recruiter-badge">OPEN TO ROLES</span>
+        </div>
+
+        <div class="story-header-left text-center">
+          <span class="act-counter">LET'S CONNECT</span>
+          <h2 class="act-title">"One conversation to turn GenAI ambition<br><span class="text-glow-gradient">into resilient enterprise reality."</span></h2>
+          <p class="act-desc">
+            Open to Senior / Staff Applied LLM Engineer &amp; Agentic Architect roles globally &mdash; Remote, Hybrid, or On-site in India &amp; Worldwide.
+          </p>
+        </div>
+
+        <!-- 4 Symmetrical Luxurious Contact Channels (Old Money + Modern Precision) -->
+        <div class="luxury-contact-deck">
+          
+          <!-- Channel 1: Direct Telephone -->
+          <a href="tel:+919958510891" class="luxury-contact-tile magnetic-hover" data-hud-override="CALL SHREYANS: +91 9958510891">
+            <div class="tile-icon-wrap gold">📞</div>
+            <div class="tile-content">
+              <span class="tile-tag">DIRECT TELEPHONE</span>
+              <h3 class="tile-title">+91 9958510891</h3>
+              <p class="tile-sub">Immediate cellular access for hiring managers</p>
+            </div>
+            <span class="tile-arrow">→</span>
+          </a>
+
+          <!-- Channel 2: Official LinkedIn -->
+          <a href="https://www.linkedin.com/in/shreyans-jain-9255351a7/" target="_blank" rel="noopener" class="luxury-contact-tile magnetic-hover" data-hud-override="VIEW LINKEDIN PROFILE & ENDORSEMENTS">
+            <div class="tile-icon-wrap blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <div class="tile-content">
+              <span class="tile-tag">LINKEDIN NETWORK</span>
+              <h3 class="tile-title">in/shreyans-jain-9255351a7</h3>
+              <p class="tile-sub">Recommendations, mutual connections &amp; updates</p>
+            </div>
+            <span class="tile-arrow">→</span>
+          </a>
+
+          <!-- Channel 3: Direct Email Invitation -->
+          <a href="mailto:shreyansjain.placement@gmail.com?subject=Opportunity%20Discussion%20-%20AI%20Engineer%20Role&body=Hi%20Shreyans%2C%20I%20reviewed%20your%20portfolio%20and%20would%20love%20to%20schedule%20an%20interview." class="luxury-contact-tile magnetic-hover" data-hud-override="EMAIL SHREYANS: shreyansjain.placement@gmail.com">
+            <div class="tile-icon-wrap emerald">✉️</div>
+            <div class="tile-content">
+              <span class="tile-tag">DIRECT EMAIL</span>
+              <h3 class="tile-title">shreyansjain.placement@gmail.com</h3>
+              <p class="tile-sub">Send job specifications or interview invitations</p>
+            </div>
+            <span class="tile-arrow">→</span>
+          </a>
+
+          <!-- Channel 4: Instant WhatsApp -->
+          <a href="https://wa.me/919958510891?text=Hi%20Shreyans,%20saw%20your%20portfolio%20and%20wanted%20to%20connect%20regarding%20an%20AI%20role." target="_blank" rel="noopener" class="luxury-contact-tile magnetic-hover" data-hud-override="START WHATSAPP CHAT: +91 9958510891">
+            <div class="tile-icon-wrap purple">💬</div>
+            <div class="tile-content">
+              <span class="tile-tag">INSTANT WHATSAPP</span>
+              <h3 class="tile-title">+91 9958510891</h3>
+              <p class="tile-sub">Fast, direct conversational messaging</p>
+            </div>
+            <span class="tile-arrow">→</span>
+          </a>
+
+        </div>
+
+        <!-- Professional Footer Card -->
+        <div class="luxury-footer-card">
+          <div class="footer-profile-summary">
+            <div class="footer-avatar">
+              <img src="/shreyans.jpg" alt="Shreyans Jain">
+            </div>
+            <div class="footer-summary-text">
+              <h4>Shreyans Jain</h4>
+              <p>AI Engineer &middot; dentsu &middot; Gurugram, India</p>
+            </div>
+          </div>
+          <div class="footer-quick-links">
+            <a href="https://github.com/Shreyyyyy?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+            <span class="f-dot">&middot;</span>
+            <a href="https://www.linkedin.com/in/shreyans-jain-9255351a7/" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="f-dot">&middot;</span>
+            <a href="mailto:shreyansjain.placement@gmail.com">Email</a>
+            <span class="f-dot">&middot;</span>
+            <a href="tel:+919958510891">Phone</a>
+          </div>
+          <div class="footer-copy">
+            &copy; 2026 Shreyans Jain. Designed with Quiet Luxury &amp; Modern Agentic Engineering.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Mobile Floating Glass Dock (Sexy, sleek, iOS-inspired quiet luxury) -->
+  <nav class="mobile-luxury-dock" aria-label="Mobile Navigation">
+    <a href="#act-0" class="mobile-dock-btn active" data-act="0">
+      <span class="dock-icon">🏛️</span>
+      <span class="dock-txt">Overview</span>
+    </a>
+    <a href="#act-skills" class="mobile-dock-btn" data-act="skills">
+      <span class="dock-icon">⚡</span>
+      <span class="dock-txt">Skills</span>
+    </a>
+    <a href="#act-systems" class="mobile-dock-btn" data-act="systems">
+      <span class="dock-icon">🤖</span>
+      <span class="dock-txt">Systems</span>
+    </a>
+    <a href="#act-journey" class="mobile-dock-btn" data-act="journey">
+      <span class="dock-icon">💼</span>
+      <span class="dock-txt">Career</span>
+    </a>
+    <a href="tel:+919958510891" class="mobile-dock-btn dock-call-highlight">
+      <span class="dock-icon">📞</span>
+      <span class="dock-txt">Call</span>
+    </a>
+  </nav>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
