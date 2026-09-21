@@ -458,7 +458,7 @@ export default function SystemsPortfolio() {
           border: 1px solid rgba(255, 255, 255, 0.11);
           position: relative;
           opacity: 0;
-          transform: perspective(1000px) translateY(55px) scale(0.92) rotateX(5deg);
+          transform: translateY(55px) scale(0.92);
           transition: 
             opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
             transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.25),
@@ -470,14 +470,14 @@ export default function SystemsPortfolio() {
         /* Pop in when scrolled into view */
         .system-card.is-scrolled-in {
           opacity: 1;
-          transform: perspective(1000px) translateY(0) scale(1) rotateX(0deg);
+          transform: translateY(0) scale(1);
           border-color: rgba(255, 255, 255, 0.16);
           box-shadow: 0 24px 55px -14px rgba(0, 0, 0, 0.8), 0 0 28px rgba(56, 189, 248, 0.08);
         }
 
         .system-card.is-scrolled-in:hover {
           border-color: var(--proj-color);
-          transform: perspective(1000px) translateY(-6px) scale(1.018);
+          transform: translateY(-6px) scale(1.018);
           box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.9), 0 0 45px var(--proj-color);
         }
 
@@ -677,45 +677,73 @@ export default function SystemsPortfolio() {
         /* Mobile & Tablet Responsiveness */
         @media (max-width: 1040px) {
           .guided-spine-track {
-            left: 12px;
-            transform: none;
+            display: none;
           }
           .systems-grid {
             grid-template-columns: 1fr;
-            gap: 28px;
-            padding-left: 20px;
+            gap: 24px;
+            padding-left: 0;
           }
         }
 
         @media (max-width: 600px) {
-          .guided-spine-track {
-            left: 8px;
+          .systems-filter-bar {
+            gap: 8px;
           }
-          .systems-grid {
-            padding-left: 14px;
+          .filter-btn {
+            padding: 8px 14px;
+            font-size: 0.78rem;
+            min-height: 38px;
           }
           .system-card {
-            padding: 24px 18px;
+            padding: 20px 16px;
+            border-radius: 16px;
+          }
+          .conduit-header-bar {
+            margin-bottom: 14px;
+          }
+          .conduit-label {
+            display: none;
           }
           .card-title {
-            font-size: 1.45rem;
+            font-size: 1.28rem;
+          }
+          .card-subtitle {
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+          }
+          .card-case-study-box {
+            padding: 14px;
+            gap: 12px;
+            margin-bottom: 16px;
           }
           .problem-topic-title {
-            font-size: 1.08rem;
+            font-size: 0.95rem;
           }
           .case-study-desc {
-            font-size: 0.96rem;
+            font-size: 0.88rem;
           }
           .card-stats-grid {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            padding: 10px;
+            gap: 6px;
+            padding: 10px 8px;
+            margin-bottom: 14px;
           }
           .card-stat-val {
-            font-size: 1.18rem;
+            font-size: 1.0rem;
           }
           .card-stat-lbl {
-            font-size: 0.65rem;
+            font-size: 0.60rem;
+          }
+          .tech-tag {
+            font-size: 0.74rem;
+            padding: 4px 9px;
+          }
+          .domain-text {
+            display: none;
+          }
+          .impact-pill {
+            font-size: 0.72rem;
+            padding: 4px 10px;
           }
         }
       `}</style>

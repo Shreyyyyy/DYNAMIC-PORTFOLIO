@@ -357,6 +357,14 @@ export default function ChronologicalOdyssey() {
           margin-bottom: 36px;
         }
 
+        @media (max-width: 480px) {
+          .career-velocity-strip {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+          }
+        }
+
         .velocity-box {
           background: rgba(14, 18, 27, 0.8);
           border: 1px solid rgba(255, 255, 255, 0.08);
@@ -385,13 +393,13 @@ export default function ChronologicalOdyssey() {
 
         .velocity-val {
           font-family: var(--font-mono);
-          font-size: 2.2rem;
+          font-size: clamp(1.5rem, 4vw, 2.2rem);
           font-weight: 850;
           display: block;
         }
 
         .velocity-title {
-          font-size: 0.88rem;
+          font-size: clamp(0.72rem, 2vw, 0.88rem);
           color: var(--text-muted);
           margin-top: 6px;
           text-transform: uppercase;
@@ -508,8 +516,8 @@ export default function ChronologicalOdyssey() {
           align-items: center;
           position: relative;
           z-index: 2;
-          gap: 16px;
-          min-width: 680px;
+          gap: 8px;
+          min-width: min(100%, 560px);
         }
 
         .transit-station-node {
@@ -556,15 +564,16 @@ export default function ChronologicalOdyssey() {
         .transit-node-info {
           display: inline-flex;
           align-items: center;
-          gap: 9px;
-          padding: 7px 18px;
+          gap: 5px;
+          padding: 5px 10px;
           border-radius: 9999px;
           background: rgba(255, 255, 255, 0.05);
           border: 1px solid rgba(255, 255, 255, 0.1);
           font-family: var(--font-mono);
-          font-size: 0.88rem;
+          font-size: clamp(0.64rem, 2vw, 0.88rem);
           color: var(--text-secondary);
           transition: all 0.22s ease;
+          white-space: nowrap;
         }
 
         .transit-station-node.active .transit-node-info {
@@ -635,7 +644,7 @@ export default function ChronologicalOdyssey() {
         }
 
         .milestone-role-title {
-          font-size: 2.35rem;
+          font-size: clamp(1.4rem, 4vw, 2.35rem);
           font-weight: 800;
           color: #ffffff;
           line-height: 1.15;
@@ -778,11 +787,65 @@ export default function ChronologicalOdyssey() {
           .odyssey-stage {
             padding: 22px 18px;
           }
-          .milestone-role-title {
-            font-size: 1.65rem;
-          }
           .milestone-metrics-group {
             width: 100%;
+            flex-wrap: wrap;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .odyssey-stage {
+            padding: 16px 14px;
+          }
+          .transit-interactive-hint {
+            font-size: 0.66rem;
+            padding: 5px 10px;
+            margin-bottom: 14px;
+          }
+          .guided-timeline-transit-wrapper {
+            padding-bottom: 20px;
+            margin-bottom: 18px;
+          }
+          .milestone-content-body {
+            padding-top: 18px;
+          }
+          .milestone-header-row {
+            flex-direction: column;
+            gap: 14px;
+          }
+          .milestone-metrics-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 8px;
+          }
+          .milestone-metric-box {
+            min-width: unset;
+            padding: 10px 8px;
+          }
+          .metric-box-val {
+            font-size: 1.1rem;
+          }
+          .metric-box-lbl {
+            font-size: 0.62rem;
+          }
+          .milestone-headline-banner {
+            padding: 12px 14px;
+            gap: 10px;
+          }
+          .headline-text {
+            font-size: 0.95rem;
+          }
+          .milestone-tabs {
+            gap: 8px;
+          }
+          .m-tab {
+            padding: 9px 14px;
+            font-size: 0.78rem;
+            min-height: 42px;
+          }
+          .milestone-list-item {
+            font-size: 0.93rem;
           }
         }
       `}</style>

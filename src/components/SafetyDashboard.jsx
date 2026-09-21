@@ -139,7 +139,7 @@ export default function SafetyDashboard() {
         }
 
         .summary-title {
-          font-size: 1.85rem;
+          font-size: clamp(1.2rem, 3.5vw, 1.85rem);
           font-weight: 750;
           color: #ffffff;
           margin-bottom: 10px;
@@ -205,7 +205,7 @@ export default function SafetyDashboard() {
         }
 
         .benchmark-name {
-          font-size: 1.15rem;
+          font-size: clamp(0.92rem, 2.5vw, 1.15rem);
           font-weight: 650;
           color: #f1f5f9;
         }
@@ -297,13 +297,31 @@ export default function SafetyDashboard() {
 
         @media (max-width: 768px) {
           .safety-dashboard-card {
-            padding: 24px 18px;
+            padding: 20px 14px;
+          }
+          .dashboard-summary-row {
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 24px;
+            padding-bottom: 18px;
           }
           .summary-stat-badge {
             width: 100%;
+            padding: 14px 20px;
           }
-          .summary-title {
-            font-size: 1.3rem;
+          .stat-large {
+            font-size: 2rem;
+          }
+          .benchmark-meta-row {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+          }
+          .benchmark-score {
+            font-size: 1.05rem;
+          }
+          .certs-grid {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>

@@ -545,35 +545,7 @@ export default function SynapticScrollNavigator() {
 
         @media (max-width: 600px) {
           .vertical-scroll-spine-root {
-            /* Position on right edge on mobile so it doesn't collide with left-aligned headers */
-            left: auto;
-            right: 8px;
-            top: 75px;
-            bottom: 75px;
-            width: 28px;
-          }
-          .stickman-speech-bubble {
-            left: auto;
-            right: 34px;
-          }
-          .bubble-pointer {
-            left: auto;
-            right: -6px;
-            border-left: none;
-            border-bottom: 1px solid rgba(56, 189, 248, 0.5);
-            border-right: 1px solid rgba(56, 189, 248, 0.5);
-          }
-          .spine-stickman-capsule {
-            width: 34px;
-            height: 48px;
-          }
-          .spine-waypoint-node {
-            width: 20px;
-            height: 20px;
-          }
-          .waypoint-dot {
-            width: 7px;
-            height: 7px;
+            display: none;
           }
         }
       `}</style>

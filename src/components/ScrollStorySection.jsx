@@ -317,31 +317,76 @@ export default function ScrollStorySection() {
         }
 
         @media (max-width: 600px) {
+          .hero-modern-section {
+            padding-top: 90px;
+            padding-bottom: 60px;
+          }
+          .hero-editorial-center {
+            margin-bottom: 32px;
+          }
+          .hero-badge {
+            font-size: 0.68rem;
+            padding: 5px 12px;
+            letter-spacing: 0.01em;
+            white-space: normal;
+            text-align: center;
+          }
           .hero-title {
-            font-size: 2.35rem;
+            font-size: clamp(2rem, 8.5vw, 2.8rem);
+            margin-bottom: 14px;
           }
           .hero-tagline {
-            font-size: 1.10rem;
+            font-size: 0.97rem;
+            margin-bottom: 24px;
+            line-height: 1.6;
+          }
+          .hero-action-group {
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 28px;
+          }
+          .hero-btn {
+            width: 100%;
+            font-size: 0.94rem;
+            padding: 13px 18px;
           }
           .hero-metrics-strip {
             grid-template-columns: repeat(2, 1fr);
-            padding: 18px 14px;
-            gap: 12px;
+            padding: 14px 12px;
+            gap: 0;
+            border-radius: 14px;
           }
-          .hero-metric-val {
-            font-size: 1.65rem;
-          }
-          .hero-metric-label {
-            font-size: 0.76rem;
-          }
-          .hero-metric-sub {
-            font-size: 0.70rem;
-          }
-          .hero-metric-item:nth-child(even) {
+          .hero-metric-item {
+            padding: 12px 8px;
             border-right: none !important;
           }
           .hero-metric-item:nth-child(odd) {
             border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+          }
+          .hero-metric-item:nth-child(1),
+          .hero-metric-item:nth-child(2) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          }
+          .hero-metric-val {
+            font-size: 1.35rem;
+          }
+          .hero-metric-label {
+            font-size: 0.66rem;
+          }
+          .hero-metric-sub {
+            font-size: 0.62rem;
+          }
+          .stage-controls-bar {
+            padding: 0 2px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+          }
+          .stage-status-indicator {
+            font-size: 0.68rem;
+          }
+          .btn-auto-simulate {
+            font-size: 0.70rem;
           }
           .hero-btn {
             width: 100%;

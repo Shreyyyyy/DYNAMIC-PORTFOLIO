@@ -339,11 +339,27 @@ body.is-actively-scrolling .contact-card.is-scrolled-in {
     padding: 0 16px;
   }
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
   .btn-primary, .btn-secondary {
     width: 100%;
     justify-content: center;
+  }
+  .section-header {
+    margin-bottom: 28px;
+  }
+  .section-header h2 {
+    font-size: clamp(1.75rem, 7.5vw, 2.4rem);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .section-header p {
+    font-size: 0.97rem;
+  }
+  .glass-pill {
+    font-size: 0.70rem;
+    padding: 5px 12px;
+    gap: 6px;
   }
 }
 

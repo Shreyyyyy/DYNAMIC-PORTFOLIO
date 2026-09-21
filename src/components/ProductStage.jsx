@@ -148,7 +148,7 @@ export default function ProductStage({ activeActIndex = 0, onSelectMode }) {
 
         @media (max-width: 600px) {
           .product-stage-card-3d {
-            height: 530px;
+            height: 380px;
           }
         }
       `}</style>
