@@ -944,25 +944,114 @@ body.old-money-theme {
   font-size: 1.55rem;
   font-weight: 800;
   color: #fff;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.25rem;
 }
 
-.sys-desc {
-  font-size: 0.96rem;
-  color: var(--text-muted);
-  line-height: 1.65;
-  margin-bottom: 1.75rem;
+/* Structured Problem / Solution / Impact blocks */
+.sys-block-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin-bottom: 1.6rem;
   flex: 1;
 }
 
-.sys-desc strong {
+.sys-sub-block {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  transition: all 0.25s ease;
+}
+
+.sys-sub-block:hover {
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+.sys-block-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.45rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+}
+
+.sys-block-label .block-icon {
+  font-size: 0.8rem;
+}
+
+.label-problem {
+  background: rgba(244, 63, 94, 0.12);
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.25);
+}
+
+.label-solution {
+  background: rgba(6, 182, 212, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.label-impact {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.sys-block-text {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sys-block-text strong {
   color: #f1f5f9;
+}
+
+.sys-impact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.sys-impact-list li {
+  font-size: 0.86rem;
+  color: var(--text-cream);
+  line-height: 1.55;
+  position: relative;
+  padding-left: 1.15rem;
+}
+
+.sys-impact-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #34d399;
+  font-size: 0.7rem;
+}
+
+.sys-impact-list li strong {
+  color: #ffffff;
 }
 
 .sys-tech-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .sys-tech-row span {
