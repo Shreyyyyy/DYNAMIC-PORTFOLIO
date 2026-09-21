@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStoryCursorHUD();
   initThreeSynapticFlow();
   initActObserver();
+  initHeroAgentSandbox();
   initSwarmInteraction();
   initVoiceTurnSimulation();
   initStoryTerminal();
@@ -393,4 +394,93 @@ function initStoryTerminal() {
       handleCommand(c);
     });
   });
+}
+
+/* ---------------- 3.5 Interactive Live Agent Swarm Sandbox ---------------- */
+function initHeroAgentSandbox() {
+  const tabs = document.querySelectorAll('.s-tab');
+  const panels = document.querySelectorAll('.sandbox-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const mode = tab.getAttribute('data-mode');
+      const targetPanel = document.getElementById(`panel-${mode}`);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+      }
+    });
+  });
+
+  // Voice Trigger
+  const btnVoice = document.getElementById('btn-trigger-voice');
+  const voiceFeed = document.getElementById('live-voice-feed');
+  const voicePhrases = [
+    "“Whisper STT decoded Hindi/English mixed input in 180ms.”",
+    "“Neural TTS synthesized voice chunk. VAD silence detected.”",
+    "“Test-drive appointment booked: Saturday 4:00 PM for Safari EV.”",
+    "“Live bidirectional WebSocket buffer streaming at 60 FPS.”"
+  ];
+  let vIdx = 0;
+  if (btnVoice && voiceFeed) {
+    btnVoice.addEventListener('click', () => {
+      confetti({ particleCount: 30, spread: 45, origin: { y: 0.4, x: 0.75 } });
+      btnVoice.innerHTML = '<span>🎙️ Processing Audio...</span>';
+      voiceFeed.textContent = "Listening to microphone packet stream...";
+      setTimeout(() => {
+        vIdx = (vIdx + 1) % voicePhrases.length;
+        voiceFeed.textContent = voicePhrases[vIdx];
+        btnVoice.innerHTML = '<span>Speak / Prompt Agent</span> <span class="action-ripple">✨</span>';
+      }, 700);
+    });
+  }
+
+  // Swarm Trigger
+  const btnSwarm = document.getElementById('btn-trigger-swarm');
+  const swarmFeed = document.getElementById('live-swarm-feed');
+  const swarmPhrases = [
+    "[LANGGRAPH] Supervisor routed query: 1 SQL agent + 1 Chart agent.",
+    "[FINE-TUNED MISTRAL] Generated valid JSON tool params (+30% accuracy).",
+    "[GUARDRAILS-AI] Clean check passed with 0 hallucination score.",
+    "[COMPLETED] CRM email drafted and sent to Kafka event queue."
+  ];
+  let sIdx = 0;
+  if (btnSwarm && swarmFeed) {
+    btnSwarm.addEventListener('click', () => {
+      confetti({ particleCount: 35, spread: 55, origin: { y: 0.4, x: 0.75 } });
+      btnSwarm.innerHTML = '<span>⚡ Orchestrating DAG...</span>';
+      swarmFeed.textContent = "[SUPERVISOR] Decomposing workflow into sub-nodes...";
+      setTimeout(() => {
+        sIdx = (sIdx + 1) % swarmPhrases.length;
+        swarmFeed.textContent = swarmPhrases[sIdx];
+        btnSwarm.innerHTML = '<span>Dispatch Multi-Agent Task</span> <span class="action-ripple">⚡</span>';
+      }, 700);
+    });
+  }
+
+  // RAG Trigger
+  const btnRag = document.getElementById('btn-trigger-rag');
+  const ragFeed = document.getElementById('live-rag-feed');
+  const ragPhrases = [
+    "Indexed 4,200 PDF pages in 18.4s. Hybrid Dense/BM25 vectors ready.",
+    "Lookup completed in 0.42s (vs 60+ min manual). 98.4% groundedness.",
+    "Citation verified: Section 4.2 of Enterprise Compliance Manual.",
+    "DeepEval Faithfulness score clocked at 0.992 across 50 queries."
+  ];
+  let rIdx = 0;
+  if (btnRag && ragFeed) {
+    btnRag.addEventListener('click', () => {
+      confetti({ particleCount: 40, spread: 60, origin: { y: 0.4, x: 0.75 } });
+      btnRag.innerHTML = '<span>🔍 Vector Lookup...</span>';
+      ragFeed.textContent = "Querying hybrid vector index...";
+      setTimeout(() => {
+        rIdx = (rIdx + 1) % ragPhrases.length;
+        ragFeed.textContent = ragPhrases[rIdx];
+        btnRag.innerHTML = '<span>Query Vector Space</span> <span class="action-ripple">🔍</span>';
+      }, 650);
+    });
+  }
 }

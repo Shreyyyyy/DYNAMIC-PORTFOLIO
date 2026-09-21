@@ -81,7 +81,7 @@
           <div class="dev-intro-col">
             <div class="dev-status-pill">
               <span class="pulse-dot-green"></span>
-              <span>AVAILABLE FOR NEW ROLES &middot; APPLIED AI / LLM ENGINEER</span>
+              <span>AVAILABLE FOR NEW ROLES &middot; AI/ML Engineer</span>
             </div>
 
             <h1 class="dev-hero-name">
@@ -122,7 +122,7 @@
             </div>
           </div>
 
-          <!-- Right Column: Personal Photo & Interactive Developer Terminal Card -->
+          <!-- Right Column: Personal Photo & Interactive Live Agent Swarm Simulator -->
           <div class="dev-card-col">
             <div class="dev-profile-card">
               <div class="dev-card-header">
@@ -137,30 +137,102 @@
                 </div>
                 <div class="dev-ping-pill">
                   <span class="live-dot"></span>
-                  <span>Active Now</span>
+                  <span>Agent Swarm Active</span>
                 </div>
               </div>
 
-              <!-- Interactive Developer Code Terminal Snippet -->
-              <div class="dev-terminal-preview">
-                <div class="term-dots">
-                  <span class="td-dot red"></span>
-                  <span class="td-dot yellow"></span>
-                  <span class="td-dot green"></span>
-                  <span class="td-title">shreyans_engineer.py</span>
+              <!-- Interactive Live Agent Swarm Sandbox (Cool & Interactive) -->
+              <div class="interactive-agent-sandbox">
+                <div class="sandbox-header">
+                  <div class="term-dots">
+                    <span class="td-dot red"></span>
+                    <span class="td-dot yellow"></span>
+                    <span class="td-dot green"></span>
+                  </div>
+                  <span class="sandbox-title">⚡ Live Agent Swarm &amp; Voice Test</span>
+                  <span class="sandbox-badge">INTERACTIVE</span>
                 </div>
-                <div class="term-code-body">
-                  <p><span class="c-kw">const</span> <span class="c-var">engineer</span> = {</p>
-                  <p class="indent-1"><span class="c-prop">name</span>: <span class="c-str">"Shreyans Jain"</span>,</p>
-                  <p class="indent-1"><span class="c-prop">focus</span>: <span class="c-str">"Agentic Swarms &amp; Voice AI"</span>,</p>
-                  <p class="indent-1"><span class="c-prop">currentRole</span>: <span class="c-str">"AI Engineer @ dentsu"</span>,</p>
-                  <p class="indent-1"><span class="c-prop">experience</span>: <span class="c-num">2.0</span>, <span class="c-comm">// years production</span></p>
-                  <p class="indent-1"><span class="c-prop">coreToolchain</span>: [</p>
-                  <p class="indent-2"><span class="c-str">"LangGraph"</span>, <span class="c-str">"Whisper"</span>, <span class="c-str">"FastAPI"</span>,</p>
-                  <p class="indent-2"><span class="c-str">"DeepEval"</span>, <span class="c-str">"Docker"</span>, <span class="c-str">"Python"</span></p>
-                  <p class="indent-1">],</p>
-                  <p class="indent-1"><span class="c-prop">mission</span>: <span class="c-str">"Build resilient AI systems that humans trust."</span></p>
-                  <p>};</p>
+
+                <!-- Interactive Switcher Tabs -->
+                <div class="sandbox-tabs">
+                  <button class="s-tab active" data-mode="voice">🎙️ Voice AI</button>
+                  <button class="s-tab" data-mode="swarm">🤖 Swarm DAG</button>
+                  <button class="s-tab" data-mode="rag">🔍 Fast RAG</button>
+                </div>
+
+                <!-- Dynamic Visual Display Canvas -->
+                <div class="sandbox-display">
+                  <!-- Mode 1: Voice AI Mode -->
+                  <div class="sandbox-panel active" id="panel-voice">
+                    <div class="audio-visualizer-wave">
+                      <span class="v-bar bar-1"></span>
+                      <span class="v-bar bar-2"></span>
+                      <span class="v-bar bar-3"></span>
+                      <span class="v-bar bar-4"></span>
+                      <span class="v-bar bar-5"></span>
+                      <span class="v-bar bar-6"></span>
+                      <span class="v-bar bar-7"></span>
+                      <span class="v-bar bar-8"></span>
+                    </div>
+                    <p class="sandbox-feed-text" id="live-voice-feed">
+                      "Streaming 240ms turnaround... Whisper STT connected."
+                    </p>
+                    <button class="btn-sandbox-action" id="btn-trigger-voice">
+                      <span>Speak / Prompt Agent</span>
+                      <span class="action-ripple">✨</span>
+                    </button>
+                  </div>
+
+                  <!-- Mode 2: Swarm DAG Mode -->
+                  <div class="sandbox-panel" id="panel-swarm">
+                    <div class="swarm-node-cluster">
+                      <div class="swarm-chip supervisor active">
+                        <span class="chip-dot"></span> LangGraph Router
+                      </div>
+                      <div class="swarm-arrow">➔</div>
+                      <div class="swarm-chip worker">
+                        <span class="chip-dot blue"></span> Mistral SQL FT
+                      </div>
+                      <div class="swarm-arrow">➔</div>
+                      <div class="swarm-chip guard">
+                        <span class="chip-dot green"></span> DeepEval Guard
+                      </div>
+                    </div>
+                    <p class="sandbox-feed-text" id="live-swarm-feed">
+                      [SUPERVISOR] Delegated 3 parallel sub-tasks across worker swarms.
+                    </p>
+                    <button class="btn-sandbox-action" id="btn-trigger-swarm">
+                      <span>Dispatch Multi-Agent Task</span>
+                      <span class="action-ripple">⚡</span>
+                    </button>
+                  </div>
+
+                  <!-- Mode 3: Fast RAG Mode -->
+                  <div class="sandbox-panel" id="panel-rag">
+                    <div class="rag-matrix-flow">
+                      <div class="rag-flow-step">
+                        <span class="step-icon">📄</span>
+                        <span class="step-lbl">100+ PDF</span>
+                      </div>
+                      <div class="rag-connector pulse"></div>
+                      <div class="rag-flow-step">
+                        <span class="step-icon">⚡</span>
+                        <span class="step-lbl">Hybrid BM25</span>
+                      </div>
+                      <div class="rag-connector pulse"></div>
+                      <div class="rag-flow-step active">
+                        <span class="step-icon">🎯</span>
+                        <span class="step-lbl">&lt;60s Match</span>
+                      </div>
+                    </div>
+                    <p class="sandbox-feed-text" id="live-rag-feed">
+                      Matched 4 ground-truth citations with 98.4% faithfulness.
+                    </p>
+                    <button class="btn-sandbox-action" id="btn-trigger-rag">
+                      <span>Query Vector Space</span>
+                      <span class="action-ripple">🔍</span>
+                    </button>
+                  </div>
                 </div>
               </div>
 
