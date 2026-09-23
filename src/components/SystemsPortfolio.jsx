@@ -540,8 +540,9 @@ export default function SystemsPortfolio() {
           position: absolute;
           inset: 0;
           border-radius: 22px;
-          background: rgba(13, 17, 26, 0.92);
-          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(22, 11, 44, 0.94);
+          border: 1px solid rgba(251, 191, 36, 0.22);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(251, 191, 36, 0.1);
           padding: 28px 26px 22px;
           display: flex;
           flex-direction: column;
@@ -953,7 +954,7 @@ export default function SystemsPortfolio() {
            SECTION HEIGHT DRIVER (desktop only)
         ───────────────────────────────────────── */
         .ssp-section {
-          height: calc(${systems.length} * 100vh + 50vh);
+          height: calc(${systems.length} * 65vh + 35vh);
         }
 
         /* ─────────────────────────────────────────
@@ -961,8 +962,8 @@ export default function SystemsPortfolio() {
         ───────────────────────────────────────── */
         .ssp-mobile {
           display: none;
-          padding-top: 80px;
-          padding-bottom: 100px;
+          padding-top: 36px;
+          padding-bottom: 50px;
         }
 
         .ssp-mobile-grid {

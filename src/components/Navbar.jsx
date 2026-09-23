@@ -40,10 +40,11 @@ export default function Navbar({ onOpenSearch }) {
         zIndex: 100,
         padding: scrolled ? '12px 20px' : '20px 24px',
         transition: 'all 0.25s ease',
-        background: scrolled || mobileMenuOpen ? 'rgba(7, 9, 14, 0.92)' : 'rgba(7, 9, 14, 0.5)',
+        background: scrolled || mobileMenuOpen ? 'rgba(14, 6, 28, 0.94)' : 'rgba(14, 6, 28, 0.65)',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
-        borderBottom: scrolled || mobileMenuOpen ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid transparent',
+        borderBottom: scrolled || mobileMenuOpen ? '1px solid rgba(251, 191, 36, 0.22)' : '1px solid transparent',
+        boxShadow: scrolled ? '0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(168, 85, 247, 0.12)' : 'none',
       }}
     >
       <div
@@ -82,9 +83,9 @@ export default function Navbar({ onOpenSearch }) {
               fontSize: '0.72rem',
               padding: '3px 10px',
               borderRadius: '9999px',
-              background: 'rgba(56, 189, 248, 0.12)',
-              color: '#38bdf8',
-              border: '1px solid rgba(56, 189, 248, 0.3)',
+              background: 'rgba(251, 191, 36, 0.14)',
+              color: '#fbbf24',
+              border: '1px solid rgba(251, 191, 36, 0.35)',
               fontWeight: 600,
             }}
           >

@@ -295,9 +295,9 @@ export default function SynapticScrollNavigator() {
           left: 50%;
           transform: translateX(-50%);
           width: 3px;
-          background: linear-gradient(180deg, #38bdf8 0%, #10b981 35%, #c084fc 70%, #f59e0b 100%);
+          background: linear-gradient(180deg, #fbbf24 0%, #c084fc 50%, #f59e0b 100%);
           border-radius: 9999px;
-          box-shadow: 0 0 10px rgba(56, 189, 248, 0.7);
+          box-shadow: 0 0 12px rgba(251, 191, 36, 0.7);
           transition: height 0.08s linear;
         }
 

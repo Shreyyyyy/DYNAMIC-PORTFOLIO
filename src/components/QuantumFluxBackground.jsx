@@ -78,13 +78,13 @@ export default function QuantumFluxBackground() {
     const particleCount = isMobile ? 80 : 160;
     const particles = [];
 
-    // Curated ethereal palette: Deep Electric Cyan, Hyper-Violet, Aurora Emerald, Amber Flare
+    // Curated ethereal palette: Imperial Radiant Gold, Royal Violet, Amber Flare, Amethyst Purple, Champagne
     const palette = [
-      { r: 56, g: 189, b: 248, hex: '#38bdf8' },  // Cyan
-      { r: 192, g: 132, b: 252, hex: '#c084fc' }, // Violet
-      { r: 16, g: 185, b: 129, hex: '#10b981' },  // Emerald
-      { r: 244, g: 63, b: 94, hex: '#f43f5e' },   // Rose Aurora
-      { r: 245, g: 158, b: 11, hex: '#f59e0b' },  // Gold
+      { r: 251, g: 191, b: 36, hex: '#fbbf24' },  // Radiant Gold
+      { r: 192, g: 132, b: 252, hex: '#c084fc' }, // Royal Violet
+      { r: 245, g: 158, b: 11, hex: '#f59e0b' },  // Amber Flare
+      { r: 168, g: 85, b: 247, hex: '#a855f7' },  // Amethyst Purple
+      { r: 254, g: 240, b: 138, hex: '#fef08a' }, // Champagne Light
     ];
 
     for (let i = 0; i < particleCount; i++) {

@@ -1,31 +1,31 @@
 /* ==========================================================================
    SHREYANS JAIN — APEX AI SYSTEMS DESIGN SYSTEM
-   Modern, Cinematic, High-Contrast & Mobile-First Architecture
+   Modern, Cinematic, Purple & Gold Luxury Architecture
    ========================================================================== */
 
 :root {
-  --bg-primary: #07090e;
-  --bg-subtle: #0b0f19;
-  --bg-surface: rgba(14, 18, 27, 0.82);
-  --bg-surface-elevated: rgba(22, 28, 42, 0.92);
-  --bg-glass: rgba(255, 255, 255, 0.05);
-  --bg-glass-hover: rgba(255, 255, 255, 0.09);
+  --bg-primary: #080312;
+  --bg-subtle: #110722;
+  --bg-surface: rgba(22, 11, 44, 0.85);
+  --bg-surface-elevated: rgba(34, 16, 68, 0.92);
+  --bg-glass: rgba(251, 191, 36, 0.05);
+  --bg-glass-hover: rgba(251, 191, 36, 0.09);
 
-  --border-subtle: rgba(255, 255, 255, 0.11);
-  --border-hover: rgba(255, 255, 255, 0.24);
-  --border-active: rgba(255, 255, 255, 0.32);
-  --border-accent: rgba(56, 189, 248, 0.5);
+  --border-subtle: rgba(251, 191, 36, 0.16);
+  --border-hover: rgba(251, 191, 36, 0.35);
+  --border-active: rgba(251, 191, 36, 0.48);
+  --border-accent: rgba(251, 191, 36, 0.55);
 
   --text-primary: #ffffff;
-  --text-secondary: #e2e8f0;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-secondary: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-dim: #94a3b8;
 
-  --accent-cyan: #38bdf8;
-  --accent-emerald: #10b981;
-  --accent-gold: #f59e0b;
+  --accent-cyan: #fbbf24;
+  --accent-emerald: #34d399;
+  --accent-gold: #fbbf24;
   --accent-purple: #c084fc;
-  --accent-blue: #3b82f6;
+  --accent-blue: #a78bfa;
   --accent-rose: #f43f5e;
 
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -55,6 +55,7 @@ html {
 body {
   min-height: 100vh;
   background-color: var(--bg-primary);
+  background: radial-gradient(ellipse at 50% 0%, #1e0b38 0%, #110722 45%, #080312 100%);
   color: var(--text-primary);
   overflow-x: clip;
   line-height: 1.68;
@@ -68,14 +69,14 @@ body {
   height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #07090e;
+  background: #080312;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.22);
+  background: rgba(251, 191, 36, 0.3);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(251, 191, 36, 0.55);
 }
 
 /* Typography Helpers */
@@ -97,7 +98,7 @@ h1, h2, h3, h4, .font-display {
 
 /* Animated Shifting Glow Gradient Text */
 .text-glow-gradient {
-  background: linear-gradient(135deg, #38bdf8 0%, #c084fc 40%, #f43f5e 80%, #38bdf8 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #fef08a 35%, #fbbf24 65%, #c084fc 100%);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,8 +112,8 @@ h1, h2, h3, h4, .font-display {
 }
 
 .text-glow-cyan {
-  color: #38bdf8;
-  text-shadow: 0 0 16px rgba(56, 189, 248, 0.45);
+  color: #fbbf24;
+  text-shadow: 0 0 16px rgba(251, 191, 36, 0.45);
 }
 
 .text-glow-emerald {
@@ -199,21 +200,21 @@ h1, h2, h3, h4, .font-display {
   padding: 14px 28px;
   min-height: 52px;
   border-radius: 14px;
-  background: #ffffff;
-  color: #07090e;
-  font-weight: 750;
+  background: linear-gradient(135deg, #fef08a 0%, #fbbf24 50%, #d97706 100%);
+  color: #080312;
+  font-weight: 850;
   font-size: 1.02rem;
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
-  box-shadow: 0 0 28px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 28px rgba(245, 158, 11, 0.4);
   transition: all 0.22s var(--ease-spring);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  background: #f8fafc;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.55);
+  background: linear-gradient(135deg, #ffffff 0%, #fef08a 50%, #fbbf24 100%);
+  box-shadow: 0 0 40px rgba(245, 158, 11, 0.65);
 }
 
 .btn-secondary {
@@ -224,21 +225,22 @@ h1, h2, h3, h4, .font-display {
   padding: 14px 26px;
   min-height: 52px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(36, 16, 70, 0.55);
   color: var(--text-primary);
   font-weight: 650;
   font-size: 1.02rem;
   text-decoration: none;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(251, 191, 36, 0.35);
   cursor: pointer;
   backdrop-filter: blur(14px);
   transition: all 0.22s ease;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(52, 23, 102, 0.8);
+  border-color: rgba(251, 191, 36, 0.6);
   transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.3);
 }
 
 /* Pulse Dot */

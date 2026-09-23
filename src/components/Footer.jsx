@@ -12,9 +12,9 @@ export default function Footer() {
   return (
     <footer
       style={{
-        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+        borderTop: '1px solid rgba(251, 191, 36, 0.15)',
         padding: '36px 24px',
-        background: '#040508',
+        background: '#080312',
       }}
     >
       <div
@@ -32,7 +32,7 @@ export default function Footer() {
             <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.86rem', color: '#f8fafc', fontWeight: 700 }}>
               SHREYANS JAIN
             </span>
-            <span style={{ fontSize: '0.70rem', color: 'var(--accent-cyan)', fontFamily: 'var(--font-mono)' }}>
+            <span style={{ fontSize: '0.70rem', color: 'var(--accent-gold)', fontFamily: 'var(--font-mono)' }}>
               · AI SYSTEMS ARCHITECT
             </span>
           </div>
@@ -70,14 +70,15 @@ export default function Footer() {
           <button
             onClick={scrollToTop}
             style={{
-              background: 'rgba(255, 255, 255, 0.05)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              color: '#ffffff',
+              background: 'rgba(251, 191, 36, 0.12)',
+              border: '1px solid rgba(251, 191, 36, 0.3)',
+              color: '#fbbf24',
               padding: '6px 14px',
               borderRadius: '8px',
               cursor: 'pointer',
               fontSize: '0.74rem',
               fontFamily: 'var(--font-mono)',
+              fontWeight: 700,
               transition: 'all 0.2s ease',
             }}
           >

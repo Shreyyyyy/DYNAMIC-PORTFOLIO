@@ -13,6 +13,16 @@
   
   <link rel="stylesheet" href="./src/style.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+
+  <!-- ES Module Import Map for Three.js and Canvas-Confetti -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "canvas-confetti": "https://esm.sh/canvas-confetti@1.9.4"
+      }
+    }
+  </script>
 </head>
 <body class="old-money-theme">
   <!-- Interactive Synaptic 3D Canvas -->
@@ -32,12 +42,71 @@
   <div class="ambient-glow glow-1"></div>
   <div class="ambient-glow glow-2"></div>
 
+  <!-- ==================== SHREYANS-OS v2.6 // HYPER-FUTURISTIC CYBER CHASSIS ==================== -->
+  <div id="cyber-hud-frame">
+    <!-- Top Telemetry Status Strip -->
+    <div class="cyber-top-telemetry-strip" aria-label="Operational Telemetry Strip">
+      <div class="cyber-telemetry-left">
+        <span class="sys-pulse-green"></span>
+        <span class="badge-tag-secret">SHREYANS-OS // v2.6</span>
+        <span>AUTH: GRANTED</span>
+      </div>
+      <div class="cyber-telemetry-center">
+        <span id="cyber-utc-clock" class="cyber-utc-display">00:00:00.000 UTC</span>
+        <span>·</span>
+        <span>GRID: 28.4595° N, 77.0266° E // GURUGRAM, IN</span>
+      </div>
+      <div class="cyber-telemetry-right">
+        <span id="cyber-ping">PING: 14ms · 60FPS</span>
+        <button id="btn-toggle-sfx" class="cyber-sfx-toggle" title="Toggle Sci-Fi Audio FX">
+          <span class="sfx-wave-icon">🔊</span>
+          <span class="sfx-text">FX: ON</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 4 Viewport Corner Target Reticles -->
+    <div class="cyber-corner-reticles">
+      <div class="cyber-reticle top-left"><span class="reticle-bracket"></span><span>TL-01 // NEURAL MESH</span></div>
+      <div class="cyber-reticle top-right"><span class="reticle-bracket"></span><span>TR-02 // INFERENCE &lt;400MS</span></div>
+      <div class="cyber-reticle bottom-left"><span class="reticle-bracket"></span><span>BL-03 // DEEPEVAL 99.4%</span></div>
+      <div class="cyber-reticle bottom-right"><span class="reticle-bracket"></span><span>BR-04 // DEPLOY DAY 1</span></div>
+    </div>
+
+    <!-- Left & Right Gutter Rulers -->
+    <div class="cyber-gutter-ruler left">
+      <div class="ruler-tick"><span class="ruler-line"></span><span>001</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>SEC_A</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>002</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>SEC_B</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>003</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>SEC_C</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>004</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>SEC_D</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>005</span></div>
+    </div>
+    <div class="cyber-gutter-ruler right">
+      <div class="ruler-tick"><span class="ruler-line"></span><span>001</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>FLOW</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>002</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>SWARM</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>003</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>VOICE</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>004</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>RAG</span></div>
+      <div class="ruler-tick"><span class="ruler-line"></span><span>005</span></div>
+    </div>
+
+    <!-- Background Animated Cyber Matrix Grid -->
+    <div class="cyber-matrix-grid"></div>
+  </div>
+
   <!-- Professional Full-Width Fixed Header -->
   <header class="luxury-header">
     <div class="header-inner">
       <a href="#act-0" class="brand-entity">
         <div class="brand-avatar-frame">
-          <img src="/shreyans.jpg" alt="Shreyans Jain" class="brand-avatar-photo">
+          <img src="./shreyans.jpg" alt="Shreyans Jain" class="brand-avatar-photo">
         </div>
         <div class="brand-titles">
           <span class="brand-title-name">Shreyans Jain</span>
@@ -49,7 +118,7 @@
       <nav class="nav-menu">
         <a href="#act-0" class="menu-link active" data-act="0">Overview</a>
         <a href="#act-skills" class="menu-link" data-act="skills">Skills</a>
-        <a href="#act-systems" class="menu-link" data-act="systems">Systems</a>
+        <a href="#act-systems" class="menu-link" data-act="systems">Projects</a>
         <a href="#act-journey" class="menu-link" data-act="journey">Experience</a>
         <a href="#act-3" class="menu-link" data-act="3">Certifications</a>
         <a href="#act-4" class="menu-link" data-act="4">Contact</a>
@@ -68,193 +137,155 @@
     </div>
   </header>
 
+  <!-- ==================== SCROLL-DRIVEN AI INFERENCE GENERATION BEAM ==================== -->
+  <div id="ai-generation-beam" class="ai-generation-beam genre-quantum" aria-label="AI Inference Generation Beam">
+    <!-- Expansive Volumetric Ambient Illumination Wash across whole content -->
+    <div class="beam-ambient-wash"></div>
+
+    <!-- Docked AI Inference Emitter Unit (Right Gutter) -->
+    <div class="beam-core-emitter" id="beam-core-emitter" title="AI Generation Core">
+      <div class="emitter-holo-pod">
+        <img src="./shreyans.jpg" alt="Shreyans AI Core" class="emitter-avatar-img">
+        <div class="emitter-laser-scan"></div>
+      </div>
+      <div class="emitter-gyro-orbit"></div>
+      
+      <!-- Telemetry Chip -->
+      <div class="emitter-telemetry-chip">
+        <div class="chip-top">
+          <span class="chip-live-dot"></span>
+          <span class="chip-genre" id="beam-chip-genre">GENRE: QUANTUM SINGULARITY</span>
+        </div>
+        <div class="chip-status" id="beam-chip-status">GENERATING // 4,096 T/S</div>
+      </div>
+    </div>
+  </div>
+
   <main class="story-wrapper">
 
     <!-- ==================== ACT 00: OVERVIEW ==================== -->
-    <section class="story-act" id="act-0" data-chapter="ACT 00" data-hud="PORTFOLIO OVERVIEW">
+    <section class="story-act" id="act-0" data-chapter="OVERVIEW" data-hud="PORTFOLIO OVERVIEW" data-genre="quantum">
       <div class="act-inner hero-story">
         
-        <!-- Authentic Developer Intro Block -->
-        <div class="developer-hero-grid">
+        <!-- ==================== QUANTUM AI COMMAND DECK (3-WAY NEXUS) ==================== -->
+        <div class="quantum-command-deck">
           
-          <!-- Left Column: Personal Developer Intro -->
-          <div class="dev-intro-col">
-            <div class="dev-status-pill">
-              <span class="pulse-dot-green"></span>
-              <span>AVAILABLE FOR NEW ROLES &middot; AI/ML Engineer</span>
+          <!-- Wing A: Left Tactical Spec Matrix -->
+          <div class="tactical-spec-wing">
+            <div class="tactical-wing-header">
+              <span class="badge-tag-secret">⚡ AI SYSTEM ARCHITECT</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> ACTIVE INFERENCE</span>
             </div>
 
-            <h1 class="dev-hero-name">
-              I'm <span class="text-glow-gradient">Shreyans Jain</span>
+            <h1 class="tactical-title">
+              Shreyans Jain <span class="text-glow-gradient">// AI Architect</span>
             </h1>
 
-            <h2 class="dev-hero-tagline">
-              AI Engineer &middot; Builder of Autonomous Agent Swarms, Low-Latency Voice AI &amp; Enterprise RAG
-            </h2>
-
-            <p class="dev-hero-bio">
-              I turn bleeding-edge Generative AI research into scalable, resilient production systems. Currently engineering agentic workflows and voice intelligence at <strong class="highlight-text">dentsu</strong>, previously fine-tuning open-weight LLMs at <strong class="highlight-text">BusinessNext</strong>. Based in Gurugram, India &mdash; shipping systems that solve real problems.
+            <p class="tactical-tagline">
+              Builder of Stateful Multi-Agent Swarms, Low-Latency Voice AI &amp; Enterprise RAG at <strong class="highlight-text">dentsu</strong>.
             </p>
 
-            <!-- Quick Developer Badges -->
-            <div class="dev-stack-pills">
-              <span class="stack-badge"><i class="dev-icon">⚡</i> LangGraph &amp; ADK</span>
-              <span class="stack-badge"><i class="dev-icon">🎙️</i> Whisper &amp; Voice AI</span>
-              <span class="stack-badge"><i class="dev-icon">🔍</i> Hybrid RAG</span>
-              <span class="stack-badge"><i class="dev-icon">🧪</i> LLaMA / Mistral Tuning</span>
-              <span class="stack-badge"><i class="dev-icon">🛡️</i> Guardrails &amp; Eval</span>
+            <!-- Live Technical Telemetry Spec Table -->
+            <div class="tactical-specs-table">
+              <div class="tactical-spec-row">
+                <span class="t-key">AGENTIC ENGINE</span>
+                <span class="t-val cyan">LangGraph DAG · Google ADK · MCP</span>
+              </div>
+              <div class="tactical-spec-row">
+                <span class="t-key">VOICE STREAMING</span>
+                <span class="t-val emerald">&lt;400ms Turnaround · Whisper STT</span>
+              </div>
+              <div class="tactical-spec-row">
+                <span class="t-key">RETRIEVAL (RAG)</span>
+                <span class="t-val violet">Sub-Minute Vector Search (4,200+ docs)</span>
+              </div>
+              <div class="tactical-spec-row">
+                <span class="t-key">SAFETY &amp; EVAL</span>
+                <span class="t-val magenta">DeepEval 99.4% · Guardrails-AI Active</span>
+              </div>
+              <div class="tactical-spec-row">
+                <span class="t-key">FINE-TUNING</span>
+                <span class="t-val sky">+30% Precision on LLaMA &amp; Mistral</span>
+              </div>
             </div>
 
-            <!-- Primary Action Buttons for Recruiters & Peers -->
-            <div class="dev-cta-group">
-              <a href="#act-systems" class="btn-dev-primary">
-                <span>View Shipped Systems</span>
-                <span class="btn-arrow">→</span>
+            <!-- Primary Actions -->
+            <div class="hero-actions">
+              <a href="#act-systems" class="btn-primary">
+                <span>View Systems</span>
+                <span class="btn-arrow">&rarr;</span>
               </a>
-              <a href="https://github.com/Shreyyyyy?tab=repositories" target="_blank" rel="noopener" class="btn-dev-secondary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                <span>GitHub Repos</span>
+              <a href="#act-4" class="btn-secondary">
+                <span>Hire / Connect</span>
               </a>
-              <a href="https://www.linkedin.com/in/shreyans-jain-9255351a7/" target="_blank" rel="noopener" class="btn-dev-secondary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                <span>LinkedIn</span>
+              <a href="https://github.com/Shreyyyyy?tab=repositories" target="_blank" rel="noopener" class="hero-social-link" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/shreyans-jain-9255351a7/" target="_blank" rel="noopener" class="hero-social-link" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- Right Column: Personal Photo & Interactive Live Agent Swarm Simulator -->
-          <div class="dev-card-col">
-            <div class="dev-profile-card">
-              <div class="dev-card-header">
-                <div class="dev-avatar-group">
-                  <div class="dev-photo-ring">
-                    <img src="/shreyans.jpg" alt="Shreyans Jain" class="dev-photo-img">
-                  </div>
-                  <div class="dev-identity-meta">
-                    <h3 class="dev-id-name">Shreyans Jain</h3>
-                    <span class="dev-id-handle">@Shreyyyyy &middot; Gurugram, IN</span>
-                  </div>
-                </div>
-                <div class="dev-ping-pill">
-                  <span class="live-dot"></span>
-                  <span>Agent Swarm Active</span>
-                </div>
+          <!-- Wing B: Center Stage — Quantum Gyroscope Reactor & Audio Spectrum -->
+          <div class="quantum-reactor-center">
+            <div class="quantum-gyro-reactor">
+              <div class="gyro-ring ring-1"></div>
+              <div class="gyro-ring ring-2"></div>
+              <div class="gyro-ring ring-3"></div>
+              <div class="gyro-avatar-core">
+                <img src="./shreyans.jpg" alt="Shreyans Jain" class="gyro-avatar-img">
+                <div class="laser-scanner-sheen"></div>
               </div>
+            </div>
 
-              <!-- Interactive Live Agent Swarm Sandbox (Cool & Interactive) -->
-              <div class="interactive-agent-sandbox">
-                <div class="sandbox-header">
-                  <div class="term-dots">
-                    <span class="td-dot red"></span>
-                    <span class="td-dot yellow"></span>
-                    <span class="td-dot green"></span>
-                  </div>
-                  <span class="sandbox-title">⚡ Live Agent Swarm &amp; Voice Test</span>
-                  <span class="sandbox-badge">INTERACTIVE</span>
-                </div>
+            <!-- Real-Time Equalizer Spectrum Visualizer Beneath Reactor -->
+            <div class="audio-spectrum-reactor">
+              <div class="spectrum-bar"></div>
+              <div class="spectrum-bar"></div>
+              <div class="spectrum-bar"></div>
+              <div class="spectrum-bar"></div>
+              <div class="spectrum-bar"></div>
+              <div class="spectrum-bar"></div>
+              <div class="spectrum-bar"></div>
+              <div class="spectrum-bar"></div>
+            </div>
 
-                <!-- Interactive Switcher Tabs -->
-                <div class="sandbox-tabs">
-                  <button class="s-tab active" data-mode="voice">🎙️ Voice AI</button>
-                  <button class="s-tab" data-mode="swarm">🤖 Swarm DAG</button>
-                  <button class="s-tab" data-mode="rag">🔍 Fast RAG</button>
-                </div>
+            <div class="reactor-status-tag">
+              ✦ QUANTUM NEURAL NEXUS // ONLINE ✦
+            </div>
+          </div>
 
-                <!-- Dynamic Visual Display Canvas -->
-                <div class="sandbox-display">
-                  <!-- Mode 1: Voice AI Mode -->
-                  <div class="sandbox-panel active" id="panel-voice">
-                    <div class="audio-visualizer-wave">
-                      <span class="v-bar bar-1"></span>
-                      <span class="v-bar bar-2"></span>
-                      <span class="v-bar bar-3"></span>
-                      <span class="v-bar bar-4"></span>
-                      <span class="v-bar bar-5"></span>
-                      <span class="v-bar bar-6"></span>
-                      <span class="v-bar bar-7"></span>
-                      <span class="v-bar bar-8"></span>
-                    </div>
-                    <p class="sandbox-feed-text" id="live-voice-feed">
-                      "Streaming 240ms turnaround... Whisper STT connected."
-                    </p>
-                    <button class="btn-sandbox-action" id="btn-trigger-voice">
-                      <span>Speak / Prompt Agent</span>
-                      <span class="action-ripple">✨</span>
-                    </button>
-                  </div>
+          <!-- Wing C: Right Cyber Command Console -->
+          <div class="cyber-command-console">
+            <div class="console-terminal-header">
+              <span class="console-terminal-title">TERMINAL // SWARM_COMMANDER</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> 60 FPS</span>
+            </div>
 
-                  <!-- Mode 2: Swarm DAG Mode -->
-                  <div class="sandbox-panel" id="panel-swarm">
-                    <div class="swarm-node-cluster">
-                      <div class="swarm-chip supervisor active">
-                        <span class="chip-dot"></span> LangGraph Router
-                      </div>
-                      <div class="swarm-arrow">➔</div>
-                      <div class="swarm-chip worker">
-                        <span class="chip-dot blue"></span> Mistral SQL FT
-                      </div>
-                      <div class="swarm-arrow">➔</div>
-                      <div class="swarm-chip guard">
-                        <span class="chip-dot green"></span> DeepEval Guard
-                      </div>
-                    </div>
-                    <p class="sandbox-feed-text" id="live-swarm-feed">
-                      [SUPERVISOR] Delegated 3 parallel sub-tasks across worker swarms.
-                    </p>
-                    <button class="btn-sandbox-action" id="btn-trigger-swarm">
-                      <span>Dispatch Multi-Agent Task</span>
-                      <span class="action-ripple">⚡</span>
-                    </button>
-                  </div>
+            <!-- 4 Quick Interactive Action Triggers -->
+            <div class="console-action-triggers">
+              <button class="console-trigger-btn" id="btn-cmd-voice">
+                <span>🎙️ 1. Test Voice AI</span>
+              </button>
+              <button class="console-trigger-btn" id="btn-cmd-swarm">
+                <span>🤖 2. Dispatch Swarm</span>
+              </button>
+              <button class="console-trigger-btn" id="btn-cmd-rag">
+                <span>🔍 3. Benchmark RAG</span>
+              </button>
+              <a href="#act-4" class="console-trigger-btn">
+                <span>⚡ 4. Hire Shreyans</span>
+              </a>
+            </div>
 
-                  <!-- Mode 3: Fast RAG Mode -->
-                  <div class="sandbox-panel" id="panel-rag">
-                    <div class="rag-matrix-flow">
-                      <div class="rag-flow-step">
-                        <span class="step-icon">📄</span>
-                        <span class="step-lbl">100+ PDF</span>
-                      </div>
-                      <div class="rag-connector pulse"></div>
-                      <div class="rag-flow-step">
-                        <span class="step-icon">⚡</span>
-                        <span class="step-lbl">Hybrid BM25</span>
-                      </div>
-                      <div class="rag-connector pulse"></div>
-                      <div class="rag-flow-step active">
-                        <span class="step-icon">🎯</span>
-                        <span class="step-lbl">&lt;60s Match</span>
-                      </div>
-                    </div>
-                    <p class="sandbox-feed-text" id="live-rag-feed">
-                      Matched 4 ground-truth citations with 98.4% faithfulness.
-                    </p>
-                    <button class="btn-sandbox-action" id="btn-trigger-rag">
-                      <span>Query Vector Space</span>
-                      <span class="action-ripple">🔍</span>
-                    </button>
-                  </div>
-                </div>
+            <!-- Live Streaming Console Log Viewport -->
+            <div class="console-log-viewport">
+              <div class="console-prompt-line">&gt; sys.initialize(mesh=ONLINE, agents=ACTIVE)</div>
+              <div id="console-live-output">
+                [SYSTEM READY] Whisper STT connected (180ms). LangGraph DAG supervisor loaded. Click any command above to trigger live diagnostic simulations.
               </div>
-
-              <!-- Production Impact Metrics Inside Dev Card -->
-              <div class="dev-metric-ribbon">
-                <div class="dev-ribbon-item">
-                  <span class="ribbon-val">&lt;1 min</span>
-                  <span class="ribbon-lbl">RAG Speed</span>
-                </div>
-                <div class="dev-ribbon-item">
-                  <span class="ribbon-val">+30%</span>
-                  <span class="ribbon-lbl">Tuned Accuracy</span>
-                </div>
-                <div class="dev-ribbon-item">
-                  <span class="ribbon-val">-40%</span>
-                  <span class="ribbon-lbl">Faults Cut</span>
-                </div>
-                <div class="dev-ribbon-item">
-                  <span class="ribbon-val">5 Concurr.</span>
-                  <span class="ribbon-lbl">Voice Channels</span>
-                </div>
-              </div>
+              <span class="console-cursor-blink"></span>
             </div>
           </div>
 
@@ -267,21 +298,15 @@
       </div>
     </section>
 
-    <!-- ==================== ACT 01: COMPREHENSIVE TECHNICAL SKILLS RADAR ==================== -->
-    <section class="story-act" id="act-skills" data-chapter="ACT 01" data-hud="TECHNICAL SKILLS & PROFICIENCIES">
+    <!-- ==================== ACT 01: SKILLS ==================== -->
+    <section class="story-act" id="act-skills" data-chapter="SKILLS" data-hud="TECHNICAL SKILLS" data-genre="matrix">
       <div class="act-inner">
-        
-        <div class="recruiter-pill-banner">
-          <span class="recruiter-star">📋</span>
-          <span>COMPREHENSIVE TECHNICAL SKILLS &amp; PROFICIENCIES</span>
-          <span class="recruiter-badge">ALL-IN-ONE MATRIX</span>
-        </div>
 
         <div class="story-header-left">
-          <span class="act-counter">TECHNICAL SPECIFICATIONS &amp; COMPETENCIES</span>
-          <h2 class="act-title">Core capabilities &amp; toolchains.<br><span class="text-glow-gradient">Tested across real enterprise deployments.</span></h2>
+          <span class="act-counter">01 / EXPERTISE</span>
+          <h2 class="act-title">Skills</h2>
           <p class="act-desc">
-            A complete, categorized inventory of my technical skills &mdash; from agent frameworks and foundation models to MLOps, backend infrastructure, and spoken languages.
+            Core toolchains, agent frameworks, and foundation models tested across enterprise production systems.
           </p>
         </div>
 
@@ -289,7 +314,11 @@
         <div class="comprehensive-skills-grid">
 
           <!-- Pillar 1: Agentic AI & Swarms -->
-          <div class="skill-matrix-box magnetic-hover" data-hud-override="AGENTIC ORCHESTRATION & STATEFUL REASONING">
+          <div class="skill-matrix-box product-card-3d magnetic-hover" data-hud-override="AGENTIC ORCHESTRATION & STATEFUL REASONING">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[MOD.01 // AGENT_GRAPH]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> 99.8% OPTIMAL</span>
+            </div>
             <div class="matrix-box-header">
               <span class="matrix-box-icon">🤖</span>
               <h3 class="matrix-box-title">Agentic AI &amp; LLMs</h3>
@@ -309,7 +338,11 @@
           </div>
 
           <!-- Pillar 2: Multimodal & Voice AI -->
-          <div class="skill-matrix-box magnetic-hover" data-hud-override="REALTIME VOICE AI & GENERATIVE VIDEO">
+          <div class="skill-matrix-box product-card-3d magnetic-hover" data-hud-override="REALTIME VOICE AI & GENERATIVE VIDEO">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[MOD.02 // VOICE_STREAM]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> &lt;400MS LATENCY</span>
+            </div>
             <div class="matrix-box-header">
               <span class="matrix-box-icon">🎙️</span>
               <h3 class="matrix-box-title">Voice AI &amp; Multimodal</h3>
@@ -328,7 +361,11 @@
           </div>
 
           <!-- Pillar 3: RAG & Search -->
-          <div class="skill-matrix-box magnetic-hover" data-hud-override="ENTERPRISE RAG & VECTOR SEARCH">
+          <div class="skill-matrix-box product-card-3d magnetic-hover" data-hud-override="ENTERPRISE RAG & VECTOR SEARCH">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[MOD.03 // VECTOR_RAG]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> 98.4% FAITHFUL</span>
+            </div>
             <div class="matrix-box-header">
               <span class="matrix-box-icon">🔍</span>
               <h3 class="matrix-box-title">RAG &amp; Information Retrieval</h3>
@@ -347,7 +384,11 @@
           </div>
 
           <!-- Pillar 4: AI Safety & Evaluation -->
-          <div class="skill-matrix-box magnetic-hover" data-hud-override="DEEPEVAL & GUARDRAILS-AI">
+          <div class="skill-matrix-box product-card-3d magnetic-hover" data-hud-override="DEEPEVAL & GUARDRAILS-AI">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[MOD.04 // SAFETY_EVAL]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> 0% VIOLATION</span>
+            </div>
             <div class="matrix-box-header">
               <span class="matrix-box-icon">🛡️</span>
               <h3 class="matrix-box-title">Safety, Governance &amp; Eval</h3>
@@ -365,7 +406,11 @@
           </div>
 
           <!-- Pillar 5: Backend, Fine-Tuning & MLOps -->
-          <div class="skill-matrix-box magnetic-hover" data-hud-override="FINE-TUNING & BACKEND INFRASTRUCTURE">
+          <div class="skill-matrix-box product-card-3d magnetic-hover" data-hud-override="FINE-TUNING & BACKEND INFRASTRUCTURE">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[MOD.05 // TUNING_OPS]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> +30% ACCURACY</span>
+            </div>
             <div class="matrix-box-header">
               <span class="matrix-box-icon">⚙️</span>
               <h3 class="matrix-box-title">Backend, Tuning &amp; MLOps</h3>
@@ -384,7 +429,11 @@
           </div>
 
           <!-- Pillar 6: Languages & Spoken Proficiencies -->
-          <div class="skill-matrix-box magnetic-hover" data-hud-override="PROGRAMMING & SPOKEN LANGUAGES">
+          <div class="skill-matrix-box product-card-3d magnetic-hover" data-hud-override="PROGRAMMING & SPOKEN LANGUAGES">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[MOD.06 // LINGUISTIC]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> MULTI-REGIONAL</span>
+            </div>
             <div class="matrix-box-header">
               <span class="matrix-box-icon">🌐</span>
               <h3 class="matrix-box-title">Languages &amp; International</h3>
@@ -405,14 +454,14 @@
       </div>
     </section>
 
-    <!-- ==================== ACT 02: REAL-WORLD PRODUCTION SHIPPED SYSTEMS ==================== -->
-    <section class="story-act" id="act-systems" data-chapter="ACT 02" data-hud="ENTERPRISE PRODUCTION SYSTEMS">
+    <!-- ==================== ACT 02: PROJECTS ==================== -->
+    <section class="story-act" id="act-systems" data-chapter="PROJECTS" data-hud="FEATURED PROJECTS" data-genre="plasma">
       <div class="act-inner">
         <div class="story-header-left">
-          <span class="act-counter">ACT 02 / SHIPPED PRODUCTION SYSTEMS</span>
-          <h2 class="act-title">Enterprise implementations.<br><span class="text-glow-gradient">Proven business results.</span></h2>
+          <span class="act-counter">02 / WORK</span>
+          <h2 class="act-title">Projects</h2>
           <p class="act-desc">
-            Directly from my work at dentsu and BusinessNext &mdash; systems built with LangGraph, Google ADK, Gemini, Whisper, Veo, MCP, DeepEval, and Guardrails-AI.
+            Production AI systems built and shipped at dentsu and BusinessNext with measurable business impact.
           </p>
         </div>
 
@@ -420,7 +469,11 @@
         <div class="systems-portfolio-grid">
 
           <!-- System 1: Flipkart Talk2Data -->
-          <div class="system-card magnetic-hover" data-hud-override="FLIPKART TALK2DATA: MULTI-AGENT SQL & ANALYTICS">
+          <div class="system-card product-card-3d magnetic-hover" data-hud-override="FLIPKART TALK2DATA: MULTI-AGENT SQL & ANALYTICS">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[PROD.SYS 01 // FLIPKART_SQL]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> LIVE IN PROD</span>
+            </div>
             <div class="sys-card-top">
               <div class="sys-badge cyan">ENTERPRISE ANALYTICS &middot; FLIPKART</div>
               <span class="sys-impact-tag text-cyan">⚡ &lt;2% Error Loop</span>
@@ -479,7 +532,11 @@
           </div>
 
           <!-- System 2: Enterprise RAG Platform -->
-          <div class="system-card magnetic-hover" data-hud-override="ENTERPRISE RAG: 60+ MINS DOWN TO UNDER 1 MIN">
+          <div class="system-card product-card-3d magnetic-hover" data-hud-override="ENTERPRISE RAG: 60+ MINS DOWN TO UNDER 1 MIN">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[PROD.SYS 02 // ENTERPRISE_RAG]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> &lt;60S LOOKUP</span>
+            </div>
             <div class="sys-card-top">
               <div class="sys-badge emerald">KNOWLEDGE RETRIEVAL &middot; PRODUCTION RAG</div>
               <span class="sys-impact-tag text-emerald">⚡ 98.3% Faster</span>
@@ -536,7 +593,11 @@
           </div>
 
           <!-- System 3: Multilingual Voice AI Bot -->
-          <div class="system-card magnetic-hover" data-hud-override="VOICE AI: 5 CONCURRENT CHANNELS & VAD">
+          <div class="system-card product-card-3d magnetic-hover" data-hud-override="VOICE AI: 5 CONCURRENT CHANNELS & VAD">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[PROD.SYS 03 // VOICE_STREAM]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> 5 DUPLEX NODES</span>
+            </div>
             <div class="sys-card-top">
               <div class="sys-badge purple">CONVERSATIONAL AI &middot; VOICE STREAMING</div>
               <span class="sys-impact-tag text-purple">⚡ 0 Human Handoff</span>
@@ -593,7 +654,11 @@
           </div>
 
           <!-- System 4: Agentic Video & Film Studio -->
-          <div class="system-card magnetic-hover" data-hud-override="AI FILM STUDIO: DIRECTOR, STORYBOARD, VEO & QA AGENTS">
+          <div class="system-card product-card-3d magnetic-hover" data-hud-override="AI FILM STUDIO: DIRECTOR, STORYBOARD, VEO & QA AGENTS">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[PROD.SYS 04 // VEO_PIPELINE]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> 4-AGENT SWARM</span>
+            </div>
             <div class="sys-card-top">
               <div class="sys-badge blue">MULTIMODAL GENAI &middot; GOOGLE VEO</div>
               <span class="sys-impact-tag text-blue">⚡ 80% Cycle Cut</span>
@@ -650,7 +715,11 @@
           </div>
 
           <!-- System 5: Creativium Creative Banner Generator -->
-          <div class="system-card magnetic-hover" data-hud-override="CREATIVIUM: CAMPAIGN-READY BANNER AUTOMATION">
+          <div class="system-card product-card-3d magnetic-hover" data-hud-override="CREATIVIUM: CAMPAIGN-READY BANNER AUTOMATION">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[PROD.SYS 05 // CREATIVIUM_GEN]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> 10X VELOCITY</span>
+            </div>
             <div class="sys-card-top">
               <div class="sys-badge amber">CREATIVE AUTOMATION &middot; AD-TECH</div>
               <span class="sys-impact-tag text-gold">⚡ 10x Asset Velocity</span>
@@ -707,7 +776,11 @@
           </div>
 
           <!-- System 6: AI RFP Analyzer & Document Intelligence -->
-          <div class="system-card magnetic-hover" data-hud-override="RFP ANALYZER: ARCHITECTURE, COSTING & SLA RECOMMENDATIONS">
+          <div class="system-card product-card-3d magnetic-hover" data-hud-override="RFP ANALYZER: ARCHITECTURE, COSTING & SLA RECOMMENDATIONS">
+            <div class="cyber-card-glitch-header">
+              <span class="c-tag">[PROD.SYS 06 // RFP_INTEL]</span>
+              <span class="c-status"><span class="sys-pulse-green"></span> &lt;4H TURNAROUND</span>
+            </div>
             <div class="sys-card-top">
               <div class="sys-badge cyan">DOC INTELLIGENCE &middot; PRE-SALES</div>
               <span class="sys-impact-tag text-cyan">⚡ 75% Faster Bids</span>
@@ -767,12 +840,12 @@
       </div>
     </section>
 
-    <!-- ==================== ACT 02: THE FULL CHRONOLOGICAL JOURNEY ==================== -->
-    <section class="story-act" id="act-journey" data-chapter="ACT 02" data-hud="THE COMPLETE 5-PHASE JOURNEY">
+    <!-- ==================== ACT 03: EXPERIENCE ==================== -->
+    <section class="story-act" id="act-journey" data-chapter="EXPERIENCE" data-hud="WORK EXPERIENCE" data-genre="temporal">
       <div class="act-inner">
         <div class="story-header-left">
-          <span class="act-counter">ACT 02 / THE CHRONOLOGICAL ODYSSEY</span>
-          <h2 class="act-title">From academic researcher<br><span class="text-glow-gradient">to enterprise AI architect.</span></h2>
+          <span class="act-counter">03 / CAREER</span>
+          <h2 class="act-title">Experience</h2>
           <p class="act-desc">
             Chronological engineering milestones spanning production LLMs, autonomous agent swarms, and computer science foundations.
           </p>
@@ -789,7 +862,11 @@
               <span class="orbit-ring"></span>
               <span class="orbit-center"></span>
             </div>
-            <div class="journey-card-content magnetic-hover">
+            <div class="journey-card-content product-card-3d magnetic-hover">
+              <div class="cyber-card-glitch-header">
+                <span class="c-tag">[TIMELINE // DENTSU_AI]</span>
+                <span class="c-status"><span class="sys-pulse-green"></span> ACTIVE MISSION</span>
+              </div>
               <div class="journey-time-tag">
                 <span class="tag-status live">CURRENT ROLE</span>
                 <span class="tag-period">May 2026 &mdash; Present (5 months)</span>
@@ -823,7 +900,11 @@
               <span class="orbit-ring"></span>
               <span class="orbit-center purple"></span>
             </div>
-            <div class="journey-card-content magnetic-hover">
+            <div class="journey-card-content product-card-3d magnetic-hover">
+              <div class="cyber-card-glitch-header">
+                <span class="c-tag">[TIMELINE // B_NEXT_AGENTIC]</span>
+                <span class="c-status"><span class="sys-pulse-green"></span> 1.0 YR ENTERPRISE</span>
+              </div>
               <div class="journey-time-tag">
                 <span class="tag-status">ENTERPRISE SCALE</span>
                 <span class="tag-period">June 2025 &mdash; May 2026 (1 year)</span>
@@ -855,7 +936,11 @@
               <span class="orbit-ring"></span>
               <span class="orbit-center blue"></span>
             </div>
-            <div class="journey-card-content magnetic-hover">
+            <div class="journey-card-content product-card-3d magnetic-hover">
+              <div class="cyber-card-glitch-header">
+                <span class="c-tag">[TIMELINE // B_NEXT_GENAI]</span>
+                <span class="c-status"><span class="sys-pulse-green"></span> SCRUM_AUTOPILOT</span>
+              </div>
               <div class="journey-time-tag">
                 <span class="tag-status">INTERNAL DEV INNOVATION</span>
                 <span class="tag-period">January 2025 &mdash; May 2025 (5 months)</span>
@@ -883,7 +968,11 @@
               <span class="orbit-ring"></span>
               <span class="orbit-center emerald"></span>
             </div>
-            <div class="journey-card-content magnetic-hover">
+            <div class="journey-card-content product-card-3d magnetic-hover">
+              <div class="cyber-card-glitch-header">
+                <span class="c-tag">[TIMELINE // ACADEMIA]</span>
+                <span class="c-status"><span class="sys-pulse-green"></span> 100+ MENTORED</span>
+              </div>
               <div class="journey-time-tag">
                 <span class="tag-status">ACADEMIA &amp; RESEARCH</span>
                 <span class="tag-period">March 2024 &mdash; December 2024 (10 months)</span>
@@ -907,7 +996,11 @@
               <span class="orbit-ring"></span>
               <span class="orbit-center amber"></span>
             </div>
-            <div class="journey-card-content magnetic-hover">
+            <div class="journey-card-content product-card-3d magnetic-hover">
+              <div class="cyber-card-glitch-header">
+                <span class="c-tag">[TIMELINE // ACADEMIC_BASE]</span>
+                <span class="c-status"><span class="sys-pulse-green"></span> MCA + BCA COMPLETED</span>
+              </div>
               <div class="journey-time-tag">
                 <span class="tag-status">ACADEMIC FOUNDATION</span>
                 <span class="tag-period">2020 &mdash; 2025</span>
@@ -930,18 +1023,22 @@
       </div>
     </section>
 
-    <!-- ==================== ACT 03: THE SHIELD (Safety, Guardrails & Certifications) ==================== -->
-    <section class="story-act" id="act-3" data-chapter="ACT 03" data-hud="OBSERVABILITY, SAFETY & GCP CERTS">
+    <!-- ==================== ACT 04: CERTIFICATIONS ==================== -->
+    <section class="story-act" id="act-3" data-chapter="CERTIFICATIONS" data-hud="GOOGLE CERTIFICATIONS" data-genre="security">
       <div class="act-inner">
         <div class="story-header-left">
-          <span class="act-counter">ACT 03 / RELIABILITY &amp; ACCREDITATIONS</span>
-          <h2 class="act-title">Safe in execution.<br><span class="text-emerald">Validated by Google.</span></h2>
+          <span class="act-counter">04 / CREDENTIALS</span>
+          <h2 class="act-title">Certifications</h2>
           <p class="act-desc">
-            Production AI requires rigorous guarantees. Telemetry, Guardrails-AI, and synthetic evaluation with DeepEval ensure zero-hallucination compliance.
+            Google Cloud credentials, Vertex AI certifications, and enterprise safety telemetry benchmarks.
           </p>
         </div>
 
-        <div class="eval-dashboard-card" data-hud-override="DEEPEVAL BENCHMARKS & GOOGLE CLOUD ACCREDITATIONS">
+        <div class="eval-dashboard-card product-card-3d" data-hud-override="DEEPEVAL BENCHMARKS & GOOGLE CLOUD ACCREDITATIONS">
+          <div class="cyber-card-glitch-header">
+            <span class="c-tag">[TELEMETRY // DEEPEVAL_SUITE]</span>
+            <span class="c-status"><span class="sys-pulse-green"></span> 0% CRITICAL DRIFT</span>
+          </div>
           <div class="eval-card-header">
             <div class="eval-title-group">
               <span class="eval-badge">DeepEval &amp; Guardrails-AI Active Suite</span>
@@ -991,22 +1088,52 @@
       </div>
     </section>
 
-    <!-- ==================== ACT 04: EXECUTIVE SUITE & CONTACT ==================== -->
-    <section class="story-act" id="act-4" data-chapter="ACT 04" data-hud="EXECUTIVE COMMUNICATIONS">
+    <!-- ==================== ACT 05: CONTACT ==================== -->
+    <section class="story-act" id="act-4" data-chapter="CONTACT" data-hud="CONTACT & HIRING" data-genre="uplink">
       <div class="act-inner contact-luxury-container">
         
-        <div class="recruiter-pill-banner">
-          <span class="recruiter-star">✦</span>
-          <span>EXECUTIVE ENGAGEMENTS &middot; DIRECT ACCESS</span>
-          <span class="recruiter-badge">OPEN TO ROLES</span>
+        <div class="story-header-left text-center">
+          <span class="act-counter">05 / GET IN TOUCH</span>
+          <h2 class="act-title">Contact</h2>
+          <p class="act-desc">
+            Open to Senior &amp; Staff Applied AI and Agentic Engineering opportunities globally &mdash; available for remote, hybrid, or on-site positions.
+          </p>
         </div>
 
-        <div class="story-header-left text-center">
-          <span class="act-counter">LET'S CONNECT</span>
-          <h2 class="act-title">"One conversation to turn GenAI ambition<br><span class="text-glow-gradient">into resilient enterprise reality."</span></h2>
-          <p class="act-desc">
-            Open to Senior / Staff Applied LLM Engineer &amp; Agentic Architect roles globally &mdash; Remote, Hybrid, or On-site in India &amp; Worldwide.
-          </p>
+        <!-- Enterprise Talent Acquisition Spec Sheet (Selling as a Tier-1 Product) -->
+        <div class="acquisition-spec-card product-card-3d">
+          <div class="cyber-card-glitch-header">
+            <span class="c-tag">[TALENT_SPEC // DEPLOYMENT_READY]</span>
+            <span class="c-status"><span class="sys-pulse-green"></span> DAY-1 CLEARANCE</span>
+          </div>
+          <div class="acq-spec-header">
+            <div>
+              <span class="module-eyebrow">✦ ENTERPRISE TALENT SPEC SHEET</span>
+              <h3 class="acq-spec-title">Deploy Shreyans Jain into Your Engineering Organization</h3>
+            </div>
+            <div class="acq-status-badge">
+              <span class="live-dot"></span>
+              <span>AVAILABLE FOR HIRE</span>
+            </div>
+          </div>
+          <div class="acq-spec-grid">
+            <div class="acq-param">
+              <span class="acq-k">TARGET ROLES</span>
+              <span class="acq-v">AI/ML Engineer &middot; Staff Agent Architect &middot; Applied LLM</span>
+            </div>
+            <div class="acq-param">
+              <span class="acq-k">TIME TO VALUE</span>
+              <span class="acq-v">Day 1 Production (LangGraph, Whisper, Vector DBs, FastAPI)</span>
+            </div>
+            <div class="acq-param">
+              <span class="acq-k">CORE GUARANTEE</span>
+              <span class="acq-v">Zero-Hallucination Guardrails &middot; Sub-400ms Voice Latency</span>
+            </div>
+            <div class="acq-param">
+              <span class="acq-k">LOCATION FLEXIBILITY</span>
+              <span class="acq-v">India (On-site / Hybrid) &amp; Global Remote / Relocation</span>
+            </div>
+          </div>
         </div>
 
         <!-- 4 Symmetrical Luxurious Contact Channels (Old Money + Modern Precision) -->
@@ -1064,7 +1191,7 @@
         <div class="luxury-footer-card">
           <div class="footer-profile-summary">
             <div class="footer-avatar">
-              <img src="/shreyans.jpg" alt="Shreyans Jain">
+              <img src="./shreyans.jpg" alt="Shreyans Jain">
             </div>
             <div class="footer-summary-text">
               <h4>Shreyans Jain</h4>
@@ -1090,7 +1217,7 @@
 
   </main>
 
-  <!-- Mobile Floating Glass Dock (Sexy, sleek, iOS-inspired quiet luxury) -->
+  <!-- Mobile Floating Glass Dock -->
   <nav class="mobile-luxury-dock" aria-label="Mobile Navigation">
     <a href="#act-0" class="mobile-dock-btn active" data-act="0">
       <span class="dock-icon">🏛️</span>
@@ -1102,11 +1229,15 @@
     </a>
     <a href="#act-systems" class="mobile-dock-btn" data-act="systems">
       <span class="dock-icon">🤖</span>
-      <span class="dock-txt">Systems</span>
+      <span class="dock-txt">Projects</span>
     </a>
     <a href="#act-journey" class="mobile-dock-btn" data-act="journey">
       <span class="dock-icon">💼</span>
-      <span class="dock-txt">Career</span>
+      <span class="dock-txt">Experience</span>
+    </a>
+    <a href="#act-4" class="mobile-dock-btn" data-act="4">
+      <span class="dock-icon">✉️</span>
+      <span class="dock-txt">Contact</span>
     </a>
     <a href="tel:+919958510891" class="mobile-dock-btn dock-call-highlight">
       <span class="dock-icon">📞</span>
