@@ -3610,16 +3610,7 @@ body.old-money-theme {
 }
 
 .emitter-laser-scan {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #ffffff 45%, var(--genre-color) 65%, transparent);
-  box-shadow: 0 0 10px var(--genre-color);
-  animation: droneLaserScan 2s ease-in-out infinite;
-  z-index: 3;
-  pointer-events: none;
+  display: none;
 }
 
 .emitter-gyro-orbit {
@@ -3711,26 +3702,7 @@ body.old-money-theme {
   transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.25s ease !important;
 }
 
-.story-act.act-generating .product-card-3d::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #ffffff 40%, var(--genre-color, #fbbf24) 60%, transparent);
-  box-shadow: 0 0 14px var(--genre-color, #fbbf24);
-  animation: cardGenerationSheen 3.2s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 10;
-}
-
-@keyframes cardGenerationSheen {
-  0% { top: 0%; opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { top: 100%; opacity: 0; }
-}
+/* Card sheen line removed — clean glow only */
 
 .story-act.act-generating .cyber-card-glitch-header .c-status {
   text-shadow: 0 0 8px var(--genre-color);
