@@ -4596,30 +4596,312 @@ body.old-money-theme {
   .cyber-telemetry-center { display: none; }
 }
 
-@media (max-width: 640px) {
+/* ============================================================
+   MOBILE RESPONSIVE — COMPREHENSIVE
+   Covers: 768px, 640px, 480px breakpoints
+   Sections: Hero, Skills, Projects, Experience, Certs, Contact
+   ============================================================ */
+
+@media (max-width: 768px) {
+  /* Global */
+  .story-act {
+    padding: 3.5rem 1.25rem 2.5rem;
+  }
+  .act-inner {
+    max-width: 100%;
+    padding: 0;
+  }
+  .act-title {
+    font-size: 2rem;
+  }
+  .act-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .story-header-left {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hero — collapse 3-col deck to single column */
+  #act-0 {
+    padding-top: calc(28px + 52px + 1rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+  .quantum-command-deck {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .quantum-reactor-center {
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+  .cyber-command-console {
+    display: none; /* hide terminal on mobile for clean layout */
+  }
   .tactical-spec-wing {
     padding: 1.25rem 1rem;
-    clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    clip-path: none;
   }
   .tactical-title {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+  .text-glow-gradient {
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 0.25rem;
+  }
+  .tactical-tagline {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
   }
   .tactical-specs-table {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
+    gap: 0.4rem;
+  }
+  .tactical-spec-row {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  .t-key {
+    min-width: 110px;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .btn-primary, .btn-secondary {
+    font-size: 0.82rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* Gyro reactor — shrink on mobile */
+  .quantum-gyro-reactor {
+    width: 160px;
+    height: 160px;
+  }
+  .gyro-avatar-core {
+    width: 120px;
+    height: 120px;
+  }
+  .audio-spectrum-reactor {
+    width: 140px;
+    gap: 3px;
+  }
+  .spectrum-bar {
+    width: 6px;
+  }
+  .reactor-status-tag {
+    font-size: 0.55rem;
+    padding: 4px 10px;
+  }
+
+  /* Scroll cue */
+  .scroll-cue {
+    margin-top: 1.5rem;
+  }
+
+  /* Skills grid — 2 cols on tablet, 1 on phone */
+  .comprehensive-skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .skill-matrix-box {
+    padding: 1rem;
+  }
+
+  /* Projects grid */
+  .systems-portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .system-card {
+    padding: 1.25rem;
+  }
+  .system-card-title {
+    font-size: 1.1rem;
+  }
+  .system-card-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Experience — journey */
+  .journey-track-container {
+    padding-left: 1rem;
+  }
+  .journey-node-card {
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+  }
+  .journey-laser-line {
+    left: 12px;
+  }
+  .journey-node-dot {
+    left: 4px;
+  }
+  .journey-role-title {
+    font-size: 1rem;
+  }
+  .journey-company-sub {
+    font-size: 0.8rem;
+  }
+
+  /* Certifications */
+  .eval-dashboard-card {
+    padding: 1.25rem;
+  }
+  .cert-capsules {
+    gap: 0.5rem;
+  }
+  .capsule {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.65rem;
+  }
+  .bench-meta span:first-child {
+    font-size: 0.72rem;
+  }
+
+  /* Contact */
+  .contact-luxury-container {
+    padding: 0 0.5rem;
+  }
+  .luxury-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .acquisition-spec-card {
+    padding: 1.25rem;
+  }
+  .acq-spec-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .acq-spec-title {
+    font-size: 1.1rem;
+  }
+
+  /* HUD elements — hide decorative items */
+  .cyber-top-telemetry-strip {
+    font-size: 0.52rem;
+  }
+  .cyber-telemetry-right {
+    display: none;
+  }
+  #cyber-hud-frame {
+    pointer-events: none;
+  }
+
+  /* Cursor HUD — hide on touch devices */
+  .cursor-hud {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .tactical-title {
+    font-size: 1.6rem;
+  }
+  .act-title {
+    font-size: 1.75rem;
+  }
+  .comprehensive-skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .system-card-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+  .acq-spec-grid {
+    grid-template-columns: 1fr;
   }
   .console-action-triggers {
     grid-template-columns: 1fr;
   }
   .quantum-gyro-reactor {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
   }
   .gyro-avatar-core {
-    width: 130px;
-    height: 130px;
+    width: 105px;
+    height: 105px;
   }
   .audio-spectrum-reactor {
-    width: 160px;
+    width: 120px;
+  }
+  .tactical-specs-table {
+    font-size: 0.66rem;
+  }
+  .story-act {
+    padding: 3rem 1rem 2rem;
+  }
+  .product-specs-chips {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .tactical-title {
+    font-size: 1.4rem;
+  }
+  .text-glow-gradient {
+    font-size: 1.1rem;
+  }
+  .tactical-tagline {
+    font-size: 0.82rem;
+  }
+  .act-title {
+    font-size: 1.5rem;
+  }
+  .act-counter {
+    font-size: 0.6rem;
+  }
+  .act-desc {
+    font-size: 0.82rem;
+  }
+  .quantum-gyro-reactor {
+    width: 120px;
+    height: 120px;
+  }
+  .gyro-avatar-core {
+    width: 90px;
+    height: 90px;
+  }
+  .audio-spectrum-reactor {
+    display: none;
+  }
+  #act-0 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .story-act {
+    padding: 2.5rem 0.75rem 1.75rem;
+  }
+  .journey-node-card {
+    gap: 0.5rem;
+  }
+  .cert-capsules {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .capsule {
+    font-size: 0.68rem;
+  }
+  .bench-track {
+    height: 4px;
+  }
+}
+
 
