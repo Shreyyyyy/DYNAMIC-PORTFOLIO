@@ -161,6 +161,22 @@
     </div>
   </div>
 
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav-overlay" onclick="closeMobileNav()"></div>
+
+  <!-- Mobile Nav Drawer (slide up on click) -->
+  <nav id="mobile-nav-drawer" role="navigation" aria-label="Mobile Navigation">
+    <div class="mobile-nav-handle"></div>
+    <div class="mobile-nav-title">Navigate</div>
+    <a href="#act-0" class="mobile-nav-link" onclick="closeMobileNav()"><span class="mobile-nav-icon">🏠</span> Home</a>
+    <a href="#act-skills" class="mobile-nav-link" onclick="closeMobileNav()"><span class="mobile-nav-icon">⚡</span> Skills</a>
+    <a href="#act-systems" class="mobile-nav-link" onclick="closeMobileNav()"><span class="mobile-nav-icon">🧠</span> Projects</a>
+    <a href="#act-experience" class="mobile-nav-link" onclick="closeMobileNav()"><span class="mobile-nav-icon">📈</span> Experience</a>
+    <a href="#act-eval" class="mobile-nav-link" onclick="closeMobileNav()"><span class="mobile-nav-icon">🏆</span> Certifications</a>
+    <a href="#act-4" class="mobile-nav-link" onclick="closeMobileNav()"><span class="mobile-nav-icon">📧</span> Contact</a>
+    <div class="mobile-nav-close" onclick="closeMobileNav()">TAP TO CLOSE ✕</div>
+  </nav>
+
   <main class="story-wrapper">
 
     <!-- ==================== ACT 00: OVERVIEW ==================== -->
@@ -1246,5 +1262,32 @@
   </nav>
 
   <script type="module" src="./src/main.js"></script>
+
+  <script>
+    // Mobile nav drawer toggle
+    function openMobileNav() {
+      document.getElementById('mobile-nav-drawer').classList.add('open');
+      document.getElementById('mobile-nav-overlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileNav() {
+      document.getElementById('mobile-nav-drawer').classList.remove('open');
+      document.getElementById('mobile-nav-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      const emitter = document.getElementById('beam-core-emitter');
+      if (emitter) {
+        emitter.addEventListener('click', function() {
+          const drawer = document.getElementById('mobile-nav-drawer');
+          if (drawer.classList.contains('open')) {
+            closeMobileNav();
+          } else {
+            openMobileNav();
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
