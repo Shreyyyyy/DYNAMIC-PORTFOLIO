@@ -3783,45 +3783,10 @@ body.old-money-theme {
 /* 1. Leading Laser Wavefront Line slicing from top to bottom (1.6s leisurely GPT generation) */
 .story-act:not(#act-0) .product-card-3d.is-generating::before,
 .story-act:not(#act-0) .terminal-window.is-generating::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: #ffffff;
-  box-shadow: 0 0 12px #ffffff, 0 0 28px var(--genre-color, #fbbf24), 0 0 50px var(--genre-glow, rgba(251, 191, 36, 0.65));
-  z-index: 30;
-  pointer-events: none;
-  animation: aiGenerativeLaserSweep 1.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  content: none;
 }
 
-/* 2. Volumetric Photonic Print Curtain sweeping down behind the laser (1.6s duration) */
-.story-act:not(#act-0) .product-card-3d.is-generating::after,
-.story-act:not(#act-0) .terminal-window.is-generating::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, 
-    transparent 0%, 
-    var(--genre-glow, rgba(251, 191, 36, 0.25)) 70%, 
-    rgba(255, 255, 255, 0.4) 100%
-  );
-  z-index: 25;
-  pointer-events: none;
-  animation: aiGenerativeCurtainSweep 1.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-}
-
-@keyframes aiGenerativeLaserSweep {
-  0% { top: -4px; opacity: 1; }
-  90% { top: calc(100% - 3px); opacity: 1; }
-  100% { top: 102%; opacity: 0; }
-}
-
-@keyframes aiGenerativeCurtainSweep {
-  0% { clip-path: inset(0 0 100% 0); opacity: 0.9; }
-  60% { clip-path: inset(0 0 0 0); opacity: 0.6; }
-  100% { clip-path: inset(100% 0 0 0); opacity: 0; }
-}
+/* Curtain sweep removed — using clean GPT token fade-in only */
 
 /* Progressive GPT-style Token Materialization Cascades */
 .story-act:not(#act-0) .product-card-3d.is-generating .cyber-card-glitch-header {
