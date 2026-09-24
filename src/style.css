@@ -373,7 +373,7 @@ body.old-money-theme {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4.5rem 2rem 3.5rem;
+  padding: 6rem 2.5rem 5rem;
   position: relative;
 }
 
@@ -1007,7 +1007,7 @@ body.old-money-theme {
 
 /* Section Headings */
 .story-header-left {
-  margin-bottom: 2rem;
+  margin-bottom: 2.75rem;
 }
 
 .act-counter {
@@ -1080,8 +1080,8 @@ body.old-money-theme {
 .comprehensive-skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  margin-top: 1.75rem;
+  gap: 1.75rem;
+  margin-top: 2.25rem;
 }
 
 .skill-matrix-box {
@@ -1090,7 +1090,7 @@ body.old-money-theme {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-radius: 20px;
-  padding: 1.6rem 1.5rem;
+  padding: 1.85rem 1.65rem;
   display: flex;
   flex-direction: column;
   transition: all 0.4s var(--ease-spring);
@@ -1206,8 +1206,8 @@ body.old-money-theme {
 .systems-portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.4rem;
-  margin-top: 1.75rem;
+  gap: 1.85rem;
+  margin-top: 2.25rem;
 }
 
 .system-card {
@@ -1216,7 +1216,7 @@ body.old-money-theme {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-radius: 20px;
-  padding: 1.75rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   transition: all 0.4s var(--ease-spring);
@@ -1510,7 +1510,7 @@ body.old-money-theme {
   display: grid;
   grid-template-columns: 56px 1fr;
   gap: 1.5rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2.5rem;
   z-index: 2;
 }
 
@@ -2488,7 +2488,7 @@ body.old-money-theme {
   .swarm-connector-svg { display: none; }
   
   .story-act {
-    padding: 6rem 1.25rem 4rem;
+    padding: 5rem 1.5rem 4rem;
     min-height: auto;
   }
 }
@@ -2496,7 +2496,7 @@ body.old-money-theme {
 @media (max-width: 768px) {
   /* Compact & comfortable ergonomic breathing room on mobile */
   .story-act {
-    padding: 2.75rem 1rem 1.75rem !important;
+    padding: 3.5rem 1.15rem 2.5rem !important;
     min-height: auto !important;
   }
 
